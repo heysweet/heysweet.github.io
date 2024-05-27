@@ -18,7 +18,7 @@ export default function Container({
   const [activeButton, setActiveButton] = React.useState<string|null>(null);
 
   return (
-    <div {...props} className={twMerge('border-green border', props.className)}>
+    <div {...props} className={twMerge('border-green border overflow-hidden', props.className)}>
         <div className='w-full h-8 bg-green border-black border border-b-0 text-black text-2xl px-2 space-x-2'>
           <span>{title}</span>
           {items?.map((item)=> {

@@ -21,9 +21,9 @@ export type PagePreview = {
     /**
      * A React component that renders a preview of the page.
      */
-    Preview?: React.FC<{}>;
+    preview?: React.ReactNode;
     /**
      * A React component that renders the full page.
      */
-    Page?: React.FC<{}>;
+    page?: React.ReactNode;
 };
