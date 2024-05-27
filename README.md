@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Design Notes
+
+Color Palette from [lospec](https://lospec.com/palette-list)
+
 ## Getting Started
 
 First, run the development server:
