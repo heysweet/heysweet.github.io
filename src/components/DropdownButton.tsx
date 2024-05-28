@@ -1,6 +1,6 @@
 'use client';
 
-import { PagePreview } from '@/types/PagePreview';
+import { Experience } from '@/types/PagePreview';
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
@@ -11,7 +11,7 @@ import { useDebounceCallback } from 'usehooks-ts';
 
 export interface DropdownButtonProps {
   title: string;
-  options: PagePreview[];
+  options: Experience[];
   isActive?: boolean;
   open: React.MouseEventHandler<HTMLButtonElement>;
   close: React.MouseEventHandler<HTMLButtonElement>;
@@ -39,12 +39,11 @@ export default function DropdownButton({
   const [hovered, setHovered] = React.useState<string | null>(null);
   const [focused, setFocused] = React.useState<string | null>(null);
 
-  const activeOption = focused || hovered;
+  const activeOption = hovered || focused;
   const selectedOption = options.find((option) => option.href === activeOption);
 
   const onHover = useDebounceCallback((id: string) => {
     setHovered(id);
-    setFocused(id);
   }, 5);
   const onUnhover = useDebounceCallback(() => {
     setHovered(null);
@@ -70,7 +69,7 @@ export default function DropdownButton({
             onMouseOver={() => onHover(option.href)}
             onMouseOut={onUnhover}>
               {option.iconSrc && <Image className='inline-block mr-2' src={option.iconSrc} alt="Brand logo" width={16} height={16}/>}
-              <span>{option.title}</span>
+              <span>{option.name}</span>
           </Link>
         </span>;
       })}

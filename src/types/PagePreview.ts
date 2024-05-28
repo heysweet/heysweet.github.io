@@ -1,15 +1,35 @@
 /**
- * A standardized format for page previews.
+ * A standardized format for Relevant Experiences.
  */
-export type PagePreview = {
+export type Experience = {
     /**
-     * The title of the page.
+     * The name of the Experience.
+     */
+    name: string;
+    /**
+     * My title during the experience.
      */
     title: string;
+
+    /**
+     * The start date of the experience.
+     */
+    startDate: Date;
+    /**
+     * The end date of the experience.
+     */
+    endDate: Date | null;
+
+    /**
+     * A brief description of the experience.
+     */
+    description: string;
+
     /**
      * The URL of the page to link to.
      */
     href: string;
+
     /**
      * The URL of the external website to link to.
      */

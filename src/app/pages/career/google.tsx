@@ -1,18 +1,8 @@
-import { PagePreview } from '@/types/PagePreview';
+import { Experience } from '@/types/PagePreview';
 import { Resume } from './resume';
 
 const Preview: React.FC = () => {
-    return (<Resume 
-        jobTitle={'Software Engineer III'}
-        startDate={new Date('2017-12-01')}
-        endDate={new Date('2021-02-28')}
-        externalWebsite={null}
-        description={`
-        - Ran dozens of cross-platform experiments and A/B tests to improve KPIs like revenue, conversion rates, and user engagement.
-        - Contributed to feature development of in-house templating language.
-        - Collaborated with designers to prototype experimental shopping experiences.
-        `.trim()}
-    />)
+    return (<Resume {...google} />)
 };
 
 const Page: React.FC = () => {
@@ -22,11 +12,24 @@ const Page: React.FC = () => {
     </>)
 };
 
-export const Google: PagePreview = {
-    title: 'Google Shopping',
+export const google = {
+    name: 'Google Shopping',
+    title: 'Software Engineer III',
+
+    startDate: new Date('2017-12-01'),
+    endDate: new Date('2021-02-28'),
+
+    description: `
+    JavaScript, Java, and Protocol Buffers.
+
+    - Ran dozens of cross-platform experiments and A/B tests to improve KPIs like revenue, conversion rates, and user engagement.
+    - Contributed to feature development of in-house templating language.
+    - Collaborated with designers to prototype experimental shopping experiences.
+    `.trim(),
+
     externalWebsite: 'https://shopping.google.com/',
     iconSrc: '/google.png',
     preview: <Preview />,
     page: <Page />,
     href: '/career#google'
-}
+} satisfies Experience;

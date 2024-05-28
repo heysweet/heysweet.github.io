@@ -2,7 +2,7 @@ import { FC } from "react";
 import Image from 'next/image';
 
 type ResumeProps = {
-    jobTitle: string;
+    title: string;
 
     startDate: Date;
     endDate: Date | null;
@@ -19,7 +19,7 @@ function formatDate(date: Date | null) {
     return date.toLocaleDateString(undefined, {month: '2-digit', year: 'numeric'});
 }
 
-export const Resume: FC<ResumeProps> = ({ jobTitle, startDate, endDate, externalWebsite, description }: ResumeProps) => {
+export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, externalWebsite, description }: ResumeProps) => {
     return (
         <div className='flex flex-row p-4 text-md'>
             <div>

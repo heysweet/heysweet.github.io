@@ -1,5 +1,6 @@
-import { DbtLabs } from './dbt_labs';
-import { Google } from './google';
-import { Iontank } from './iontank';
+import { dbtLabs } from './dbtLabs';
+import { google } from './google';
+import { iontank } from './iontank';
+import { nike } from './nike';
 
-export const careerOptions = [DbtLabs, Google, Iontank];
+export const relevantExperience = [dbtLabs, google, iontank, nike];

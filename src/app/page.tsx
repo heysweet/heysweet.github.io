@@ -1,12 +1,12 @@
 import Container from '@/components/Container';
 import Image from 'next/image';
-import { careerOptions } from './pages/career';
+import { relevantExperience } from './pages/career';
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center p-4 sm:p-20  bg-black text-green">
+    <main className="min-h-screen flex flex-col items-center p-4 sm:p-20 mono bg-black text-green">
       <Container title='System' className='w-full max-w-6xl' items={[
-        { title: 'Career', options: careerOptions },
+        { title: 'Experience', options: relevantExperience },
         { title: 'Projects', options: [/*'test', 'test2'*/] },
         { title: 'Languages', options: [] },
         { title: 'About', options: [] }

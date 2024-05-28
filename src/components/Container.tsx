@@ -1,7 +1,7 @@
 'use client';
 
-import React, { RefObject, useMemo } from 'react';
-import { twJoin, twMerge } from 'tailwind-merge';
+import React from 'react';
+import { twMerge } from 'tailwind-merge';
 import DropdownButton, { DropdownButtonProps } from './DropdownButton';
 import { useResizeObserver } from 'usehooks-ts';
 
