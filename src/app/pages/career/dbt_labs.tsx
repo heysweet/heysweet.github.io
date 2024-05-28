@@ -10,7 +10,6 @@ const Preview: React.FC = () => {
         description={`
         - Transformed my hackathon-winning project into dbt Explorer, a flag-ship product for dbt Labs.
         - Built and maintained dbt-dag, a react library and npm package for visualizing dbt models across dbt Cloud.
-        - test3
         `.trim()}
     />)
 };
@@ -25,7 +24,7 @@ const Page: React.FC = () => {
 export const DbtLabs: PagePreview = {
     title: 'dbt Labs',
     externalWebsite: 'https://www.getdbt.com/',
-    iconSrc: '/public/dbt.png',
+    iconSrc: '/dbt.png',
     preview: <Preview />,
     page: <Page />,
     href: '/career#dbt-labs'
