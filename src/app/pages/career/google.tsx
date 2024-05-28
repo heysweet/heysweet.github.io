@@ -8,9 +8,8 @@ const Preview: React.FC = () => {
         endDate={new Date('2021-02-28')}
         externalWebsite={null}
         description={`
-        - Lead the development of cross-platform shopping experiences for Google Shopping.
+        - Ran dozens of cross-platform experiments and A/B tests to improve KPIs like revenue, conversion rates, and user engagement.
         - Contributed to feature development of in-house templating language.
-        - Ran dozens of experiments and A/B tests to improve KPIs like revenue, conversion rates, and user engagement.
         - Collaborated with designers to prototype experimental shopping experiences.
         `.trim()}
     />)
@@ -25,7 +24,7 @@ const Page: React.FC = () => {
 
 export const Google: PagePreview = {
     title: 'Google Shopping',
-    externalWebsite: 'https://www.getdbt.com/',
+    externalWebsite: 'https://shopping.google.com/',
     iconSrc: '/google.png',
     preview: <Preview />,
     page: <Page />,

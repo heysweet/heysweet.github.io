@@ -14,7 +14,7 @@
       linear-gradient(45deg, transparent 75%, #1b1233 75%),
       linear-gradient(135deg, transparent 75%, #1b1233 75%);
     background-size: 2px 2px; /* Must be a square */
-    background-position:0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px; /* Must be half of one side of the square */
+    background-position:0 0, 1px 0, 1px -1px, 0px 1px; /* Must be half of one side of the square */
   }
 
   .checkerboard-light {
@@ -24,6 +24,6 @@
       linear-gradient(45deg, transparent 75%, #dcf29d 75%),
       linear-gradient(135deg, transparent 75%, #dcf29d 75%);
     background-size: 2px 2px; /* Must be a square */
-    background-position:0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px; /* Must be half of one side of the square */
+    background-position:0 0, 1px 0, 1px -1px, 0px 1px; /* Must be half of one side of the square */
   }
 }
