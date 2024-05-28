@@ -31,16 +31,16 @@ export default function VirtualWindow({
   return (
     <div {...props} className={twMerge('border-green border overflow-hidden', props.className)} ref={containerRef} >
         <div className='w-full h-8 bg-green border-black border border-b-0 text-black text-2xl relative'>
-          {items?.map((item)=> {
-            return <DropdownButton
-                      {...item}
-                      title={shouldUseShortTitle ? item.shortTitle : item.title}
-                      className='px-1'
-                      key={item.title}
-                      isActive={activeButton == null ? undefined : activeButton === item.title}
-                      open={() => setActiveButton(item.title)}
-                      close={() => setActiveButton(null)} />
-          })}
+          {items?.map((item)=> (
+            <DropdownButton
+              {...item}
+              title={shouldUseShortTitle ? item.shortTitle : item.title}
+              className='px-1'
+              key={item.title}
+              isActive={activeButton == null ? undefined : activeButton === item.title}
+              open={() => setActiveButton(item.title)}
+              close={() => setActiveButton(null)} />
+          ))}
         </div>
         <div>{children}</div>
     </div>

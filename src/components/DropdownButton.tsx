@@ -6,6 +6,7 @@ import Image from 'next/image';
 import React from 'react';
 import { twJoin } from 'tailwind-merge';
 import { useDebounceCallback } from 'usehooks-ts';
+import { formatDateDuration } from '@/utils/date';
 
 
 export interface DropdownButtonProps {
@@ -68,11 +69,12 @@ export default function DropdownButton({
             className='whitespace-nowrap flex items-center space-x-1 pl-2 pr-6 border border-dashed hover:border-black'
             href={option.href}
             onFocus={() => onFocus(option.href)}
-            onBlur={onBlur}
             onMouseOver={() => onHover(option.href)}
+            onBlur={onBlur}
             onMouseOut={onUnhover}>
               {option.iconSrc && <Image className='inline-block mr-2' src={option.iconSrc} alt="Brand logo" width={16} height={16}/>}
-              <span>{option.name}</span>
+              <span className='flex-1'>{option.name}</span>
+              <span className='pl-4 flex-1 truncate text-right'>{formatDateDuration(option.startDate, option.endDate)}</span>
           </Link>
         </span>;
       })}
