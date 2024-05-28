@@ -1,6 +1,6 @@
 import VirtualWindow from '@/components/VirtualWindow';
 import Image from 'next/image';
-import { relevantExperience } from './pages/career';
+import { relevantExperience } from './pages/experience';
 
 export default function Home() {
   return (

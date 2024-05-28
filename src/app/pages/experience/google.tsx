@@ -31,5 +31,5 @@ export const google = {
     iconSrc: '/google.png',
     preview: <Preview />,
     page: <Page />,
-    href: '/career#google'
+    href: '/experience#google'
 } satisfies Experience;

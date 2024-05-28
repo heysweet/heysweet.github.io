@@ -22,6 +22,8 @@ export interface DropdownButtonProps {
   className?: string;
 };
 
+const DEBOUNCE_MILLIS = 30;
+
 export default function DropdownButton({
   title,
   isActive,
@@ -48,20 +50,20 @@ export default function DropdownButton({
 
   const onHover = useDebounceCallback((id: string) => {
     setHovered(id);
-  }, 5);
+  }, DEBOUNCE_MILLIS);
   const onUnhover = useDebounceCallback(() => {
     setHovered(null);
-  }, 5);
+  }, DEBOUNCE_MILLIS);
   const onFocus = useDebounceCallback((id: string) => {
     setHovered(id);
     setFocused(id);
-  }, 5);
+  }, DEBOUNCE_MILLIS);
   const onBlur = useDebounceCallback(() => {
     setFocused(null);
-  }, 5);
+  }, DEBOUNCE_MILLIS);
 
   return (<>
-    <button className={twJoin('border border-dashed box-border h-[31px] hover:border-black active:border-black', className, isActive ? 'border-black' : 'border-transparent', isActive === false && 'checkerboard')} onClick={onClick}>{title}</button>
+    <button className={twJoin('border text-black border-dashed box-border h-[31px] hover:border-black active:border-black', className, isActive ? 'border-black' : 'border-transparent', isActive === false && 'checkerboard')} onClick={onClick}>{title}</button>
     {isActive && <div className='absolute w-full top-8 left-0 bg-green border-black border border-t-0'>
       {options.map((option) => {
         return <span key={option.href} className=''>
@@ -73,8 +75,8 @@ export default function DropdownButton({
             onBlur={onBlur}
             onMouseOut={onUnhover}>
               {option.iconSrc && <Image className='inline-block mr-2' src={option.iconSrc} alt="Brand logo" width={16} height={16}/>}
-              <span className='flex-1'>{option.name}</span>
-              <span className='pl-4 flex-1 truncate text-right'>{formatDateDuration(option.startDate, option.endDate)}</span>
+              <span className='flex-1 text-black'>{option.name}</span>
+              <span className='pl-4 flex-1 truncate text-right text-black'>{formatDateDuration(option.startDate, option.endDate)}</span>
           </Link>
         </span>;
       })}

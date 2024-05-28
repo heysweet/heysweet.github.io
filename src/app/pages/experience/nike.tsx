@@ -33,5 +33,5 @@ export const nike = {
     iconSrc: '/nike.png',
     preview: <Preview />,
     page: <Page />,
-    href: '/career#nike'
+    href: '/experience#nike'
 } satisfies Experience;

@@ -28,13 +28,24 @@ function millisToDuration(millis: number, isStillActive = false): string {
     const hours = minutes / 60;
     const days = hours / 24;
     const months = days / 30;
-    const years = months / 12;
+    const years = (months / 12).toFixed(0);
+
+    const durations: string[] = [];
+
+    if (years !== '0') {
+        durations.push(`${years} yrs`);
+    }
     
     const monthsRemainder = months % 12;
-    const monthsStr = monthsRemainder ? `, ${monthsRemainder.toFixed(0)} mo` : '';
+    const monthsNormalized = monthsRemainder < 1 ? 0 : monthsRemainder;
+
+    if (monthsNormalized !== 0) {
+        durations.push(`${monthsNormalized.toFixed(0)} mo`);
+    }
+
     const andCounting = isStillActive ? '+' : '';
 
-    return `${years.toFixed(0)} yrs${monthsStr}${andCounting}`;
+    return `${durations.join(', ')}${andCounting}`;
 }
 
 export function formatDateDuration(start: Date, end: Date | null) {

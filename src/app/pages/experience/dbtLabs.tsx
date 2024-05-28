@@ -29,5 +29,5 @@ export const dbtLabs = {
     iconSrc: '/dbt.png',
     preview: <Preview />,
     page: <Page />,
-    href: '/career#dbt-labs'
+    href: '/experience#dbt-labs'
 } satisfies Experience;
