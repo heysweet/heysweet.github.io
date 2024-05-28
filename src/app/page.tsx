@@ -1,15 +1,15 @@
-import Container from '@/components/Container';
+import VirtualWindow from '@/components/VirtualWindow';
 import Image from 'next/image';
 import { relevantExperience } from './pages/career';
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center p-4 sm:p-20 mono bg-black text-green">
-      <Container title='System' className='w-full max-w-6xl' items={[
-        { title: 'Experience', options: relevantExperience },
-        { title: 'Projects', options: [/*'test', 'test2'*/] },
-        { title: 'Languages', options: [] },
-        { title: 'About', options: [] }
+      <VirtualWindow title='System' className='w-full max-w-6xl' items={[
+        { title: 'Experience', shortTitle: 'EXP', options: relevantExperience },
+        { title: 'Projects', shortTitle: 'PROJ', options: [/*'test', 'test2'*/] },
+        { title: 'Languages', shortTitle: 'LANG', options: [] },
+        { title: 'About', shortTitle: 'ABT', options: [] }
         ]}>
         <div className='flex m-4'>
           <span>
@@ -42,7 +42,7 @@ export default function Home() {
             </div>
           </span>
         </div>
-      </Container>
+      </VirtualWindow>
     </main>
   );
 }

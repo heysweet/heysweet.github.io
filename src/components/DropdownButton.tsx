@@ -4,13 +4,16 @@ import { Experience } from '@/types/PagePreview';
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
-import { Preview } from './Preview';
 import { twJoin } from 'tailwind-merge';
 import { useDebounceCallback } from 'usehooks-ts';
 
 
 export interface DropdownButtonProps {
   title: string;
+  /**
+   * For smaller displays, the short title is used.
+   */
+  shortTitle: string;
   options: Experience[];
   isActive?: boolean;
   open: React.MouseEventHandler<HTMLButtonElement>;
