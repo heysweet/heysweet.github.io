@@ -48,11 +48,8 @@ export default function DropdownButton({
   const activeOption = hovered || focused;
   const selectedOption = options.find((option) => option.href === activeOption);
 
-  const onHover = useDebounceCallback((id: string) => {
-    setHovered(id);
-  }, DEBOUNCE_MILLIS);
-  const onUnhover = useDebounceCallback(() => {
-    setHovered(null);
+  const onHover = useDebounceCallback((id?: string) => {
+    setHovered(id ?? null);
   }, DEBOUNCE_MILLIS);
   const onFocus = useDebounceCallback((id: string) => {
     setHovered(id);
@@ -73,7 +70,7 @@ export default function DropdownButton({
             onFocus={() => onFocus(option.href)}
             onMouseOver={() => onHover(option.href)}
             onBlur={onBlur}
-            onMouseOut={onUnhover}>
+            onMouseOut={() => onHover()}>
               {option.iconSrc && <Image className='inline-block mr-2' src={option.iconSrc} alt="Brand logo" width={16} height={16}/>}
               <span className='flex-1 text-black'>{option.name}</span>
               <span className='pl-4 flex-1 truncate text-right text-black'>{formatDateDuration(option.startDate, option.endDate)}</span>
