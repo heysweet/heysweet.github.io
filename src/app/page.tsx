@@ -1,12 +1,14 @@
 import VirtualWindow from '@/components/VirtualWindow';
 import Image from 'next/image';
 import { relevantExperience } from './pages/experience';
+import { education } from './pages/education';
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center p-4 sm:p-20 mono bg-black text-green">
       <VirtualWindow title='System' className='w-full max-w-6xl' items={[
         { title: 'Experience', shortTitle: 'EXP', options: relevantExperience },
+        { title: 'Education', shortTitle: 'EDU', options: education },
         { title: 'Projects', shortTitle: 'PROJ', options: [/*'test', 'test2'*/] },
         { title: 'Languages', shortTitle: 'LANG', options: [] },
         { title: 'About', shortTitle: 'ABT', options: [] }

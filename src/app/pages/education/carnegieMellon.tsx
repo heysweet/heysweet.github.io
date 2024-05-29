@@ -1,5 +1,5 @@
 import { Experience } from '@/types/PagePreview';
-import { Resume } from './resume';
+import { Resume } from '../experience/resume';
 
 const Preview: React.FC = () => {
     return (<Resume {...carnegieMellon} />)
