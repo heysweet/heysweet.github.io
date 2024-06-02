@@ -5,6 +5,16 @@ import { education } from "./education";
 import "./globals.css";
 import Head from "next/head";
 
+import { VT323 } from 'next/font/google';
+
+export const vt323Font = VT323({
+  weight: '400',
+  display: 'swap',
+  variable: '--font-vt323',
+  fallback: ['Helvetica', 'sans-serif'],
+  subsets: ['latin'],
+});
+
 export const metadata: Metadata = {
   title: "Andrew Sweet's Portfolio",
   description: "Portfolio of Andrew Sweet, a senior software engineer based in Philadelphia, PA.",
@@ -23,7 +33,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <body className="font-mono scanlines animate-chroma">
+      <body className={`${vt323Font.className} scanlines animate-chroma`}>
         <main className="h-screen flex flex-col items-center p-4 sm:p-10 mono bg-green text-green checkerboard-lg">
           <VirtualWindow title='System' className='border-black border-2 w-full max-w-6xl h-screen bg-black' items={[
             { title: 'Experience', shortTitle: 'EXP', options: relevantExperience },

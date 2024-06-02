@@ -230,12 +230,48 @@ const config: Config = {
           'textShadow': '2.62px 0 1px rgba(0,30,255,0.13), -2.621px 0 1px rgba(255,0,80,0.06), 0 0 3px;'
         },
       },
+      imageLoad: {
+        '0%': {
+          'clip-path': 'inset(0 0 88% 0);',
+        },
+        '12%': {
+          'clip-path': 'inset(0 0 88% 0);',
+        },
+        '13%': {
+          'clip-path': 'inset(0 0 73% 0);',
+        },
+        '27%': {
+          'clip-path': 'inset(0 0 73% 0);',
+        },
+        '28%': {
+          'clip-path': 'inset(0 0 58% 0);',
+        },
+        '42%': {
+          'clip-path': 'inset(0 0 58% 0);',
+        },
+        '43%': {
+          'clip-path': 'inset(0 0 32% 0);',
+        },
+        '68%': {
+          'clip-path': 'inset(0 0 32% 0);',
+        },
+        '69%': {
+          'clip-path': 'inset(0 0 15% 0);',
+        },
+        '99%': {
+          'clip-path': 'inset(0 0 15% 0);',
+        },
+        '100%': {
+          'clip-path': 'inset(0 0 0% 0);',
+        },
+      }
     },
     animation: {
       flicker: 'flicker 0.2s infinite',
       'img-chroma': 'imageChroma 3.5s infinite',
       'chroma': 'chromaticAberration 3.5s infinite',
       'chroma-lg': 'chromaticAberrationHover 3.5s infinite',
+      'img-load': 'imageLoad 2s linear forwards',
     }
   },
   plugins: [],

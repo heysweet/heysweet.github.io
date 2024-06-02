@@ -5,7 +5,7 @@ export default function LandingPage() {
     <>
       <span>
           <Image
-              className='skip-chroma'
+              className='skip-chroma animate-img-load'
               src="/256.png"
               alt="Picture of Andrew Sweet"
               priority 

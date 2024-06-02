@@ -60,12 +60,12 @@ export default function DropdownButton({
   }, DEBOUNCE_MILLIS);
 
   return (<>
-    <button className={twJoin('px-2 text-black box-border h-[31px]', className, isActive ? 'border-black' : 'border-transparent', isActive === false && 'checkerboard')} onClick={onClick} onFocus={(e)=>{}}>{title}</button>
+    <button className={twJoin('px-2 text-black box-border hover:checkerboard h-[31px]', className, isActive ? 'border-black' : 'border-transparent', isActive === false && 'checkerboard')} onClick={onClick} onFocus={(e)=>{}}>{title}</button>
     {isActive && <div className='absolute scanlines w-full top-8 left-0 bg-green border-black border border-t-0'>
       {options.map((option) => {
         return <span key={option.href} className=''>
           <Link
-            className='whitespace-nowrap flex items-center space-x-1 pl-2 pr-6 border border-dashed hover:border-black'
+            className='whitespace-nowrap flex items-center space-x-1 pl-2 pr-6 hover:checkerboard'
             href={option.href}
             onFocus={() => onFocus(option.href)}
             onMouseOver={() => onHover(option.href)}

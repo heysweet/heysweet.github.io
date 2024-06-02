@@ -15,7 +15,7 @@ type ResumeProps = {
 
 export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, externalWebsite, description }: ResumeProps) => {
     return (
-        <div className='flex flex-row p-4 text-md bg-black text-green border border-green'>
+        <div className='flex flex-row p-4 text-lg bg-black text-green border border-green'>
             <div>
                 <h3 className="whitespace-nowrap">{jobTitle}</h3>
                 <p className="whitespace-nowrap space-x-2">
