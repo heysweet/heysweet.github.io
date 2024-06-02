@@ -9,7 +9,7 @@ interface ContainerProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'ref
   items?: Omit<DropdownButtonProps, 'open' | 'close'>[];
 }
 
-const SHORT_TITLE_MAX_WIDTH = 740;
+export const SHORT_TITLE_MAX_WIDTH = 768;
 
 /**
  * VirtualWindow is a container with a top bar for menu items,
@@ -37,7 +37,7 @@ export default function VirtualWindow({
               <DropdownButton
                 {...item}
                 title={shouldUseShortTitle ? item.shortTitle : item.title}
-                className='px-1'
+                className='px-1 overflow-hidden'
                 key={item.title}
                 isActive={activeButton == null ? undefined : activeButton === item.title}
                 open={() => setActiveButton(item.title)}

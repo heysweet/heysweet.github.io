@@ -65,7 +65,7 @@ export default function DropdownButton({
       {options.map((option) => {
         return <span key={option.href} className=''>
           <Link
-            className='whitespace-nowrap flex items-center space-x-1 pl-2 pr-6'
+            className='whitespace-nowrap flex items-center space-x-1 pl-2 pr-6 overflow-hidden truncate'
             href={option.href}
             target={option.href.startsWith('/') ? undefined : '_blank'}
             onFocus={() => onFocus(option.href)}
@@ -73,8 +73,8 @@ export default function DropdownButton({
             onBlur={onBlur}
             onMouseOut={() => onHover()}>
               {option.iconSrc && <Image className='inline-block mr-2' src={option.iconSrc} alt="Brand logo" width={16} height={16}/>}
-              <span className='flex-1'>{option.name}</span>
-              {option.startDate && <span className='pl-4 flex-1 truncate text-right'>{formatDateDuration(option.startDate, option.endDate)}</span>}
+              <span className='flex-1 overflow-hidden truncate'>{option.name}</span>
+              {option.startDate && <span className='pl-4 flex-0 truncate text-right'>{formatDateDuration(option.startDate, option.endDate)}</span>}
           </Link>
         </span>;
       })}

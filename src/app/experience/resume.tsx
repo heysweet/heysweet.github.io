@@ -16,8 +16,8 @@ type ResumeProps = {
 
 export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, externalWebsite, description, heroImageSrc }: ResumeProps) => {
     return (
-        <div className='flex flex-row p-4 text-lg bg-black text-green border border-green'>
-            <div className="flex-1">
+        <div className='flex flex-col lg:flex-row p-4 text-lg bg-black text-green border border-green'>
+            <div className="flex-1 mr-4">
                 <h3 className="whitespace-nowrap">{jobTitle}</h3>
                 <p className="whitespace-nowrap space-x-2">
                     <Image src="/calendar.png" alt="Work dates" width={16} height={16} priority className="ml-1 inline align-middle transform-green skip-chroma" />
@@ -28,7 +28,7 @@ export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, e
             </div>
             {heroImageSrc && 
             <div className="flex-0">
-                <Image className="ml-4 skip-chroma animate-img-load"
+                <Image className="skip-chroma animate-img-load"
                     src={heroImageSrc}
                     width={450}
                     height={300}

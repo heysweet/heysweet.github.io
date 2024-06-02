@@ -30,7 +30,7 @@ const technologies = [
 export default function LandingPage() {
   return (
     <>
-      <div className='flex'>
+      <div className='flex flex-col md:flex-row'>
         <span className='flex-0'>
             <Image
                 className='skip-chroma animate-img-load'
@@ -46,12 +46,15 @@ export default function LandingPage() {
               <div className='space-x-2 mb-4'>
                 <a href='https://www.linkedin.com/in/andrewmsweet/' target='_blank'>LinkedIn</a>
                 <a href='https://github.com/heysweet' target='_blank'>GitHub</a>
+                <a href="mailto:andrewmsweet.website@gmail.com" target='_blank'>
+                  <span className='sr-only'>Write an </span>Email
+                </a>
               </div>
               <div className='h-16 overflow-hidden animate-fade-in'>
-                <Marquee gradient gradientColor='#1b1233' gradientWidth={100}>
+                <Marquee gradient gradientColor='#1b1233' gradientWidth={100} speed={20}>
                   {marqueeTitles.join('  |  ') + ' '}
                 </Marquee>
-                <Marquee gradient gradientColor='#1b1233' gradientWidth={100}>
+                <Marquee gradient gradientColor='#1b1233' gradientWidth={100} speed={20}>
                   {technologies.join('  |  ') + ' '}
                 </Marquee>
               </div>
@@ -72,7 +75,7 @@ export default function LandingPage() {
                 <div>
                 I am currently working as a Senior Software Engineer
                 at <a href='/experience#dbt-labs'>dbt Labs</a>, where I
-                turned a hackathon win into a flagship product <a target='_blank' href="https://www.getdbt.com/blog/proactively-improve-your-dbt-projects-with-new-dbt-explorer-features">dbt Explorer</a>.
+                turned a hackathon win into a flagship product: <a target='_blank' href="https://www.getdbt.com/blog/proactively-improve-your-dbt-projects-with-new-dbt-explorer-features">dbt Explorer</a>.
                 
                 Formerly, I worked
                 at companies like <a href='/experience#google-shopping'>Google</a>,
@@ -81,7 +84,7 @@ export default function LandingPage() {
                 </div>
                 <div>
                 In my free time, I enjoy making videogames -- most recently having created
-                {' '}<a href='https://itch.io/jam/miz-jam-1/rate/738711' target='_blank'>Bridge: The Card Game: The Video Game</a> for a game jam (
+                {' '}<a href='https://itch.io/jam/miz-jam-1/rate/738711' className='whitespace-nowrap' target='_blank'>Bridge: The Card Game: The Video Game</a> for a game jam (
                   <a href="https://www.youtube.com/watch?v=lj866DtYVlo" target='_blank'>Dev Vlog</a>).
                 </div>
               </div>
