@@ -6,6 +6,11 @@
   a, button {
     @apply text-black;
     @apply animate-chroma;
+    @apply bg-green;
+  }
+
+  [target='_blank'] {
+    @apply underline;
   }
 
   img:not(.skip-chroma) {

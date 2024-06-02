@@ -31,5 +31,5 @@ export const google = {
     iconSrc: '/google.png',
     preview: <Preview />,
     page: <Page />,
-    href: '/experience#google'
+    href: '/experience#google-shopping'
 } satisfies Experience;

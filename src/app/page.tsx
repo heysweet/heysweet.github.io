@@ -44,14 +44,14 @@ export default function LandingPage() {
           <h1 className='text-5xl whitespace-nowrap'>Andrew Sweet</h1>
           <div className='text-2xl mt-2'>
               <div className='space-x-2 mb-4'>
-                <a className='bg-green underline' href='https://www.linkedin.com/in/andrewmsweet/' target='_blank'>LinkedIn</a>
-                <a className='bg-green underline' href='https://github.com/heysweet' target='_blank'>GitHub</a>
+                <a href='https://www.linkedin.com/in/andrewmsweet/' target='_blank'>LinkedIn</a>
+                <a href='https://github.com/heysweet' target='_blank'>GitHub</a>
               </div>
-              <div className='h-16'>
-                <Marquee>
+              <div className='h-16 overflow-hidden animate-fade-in'>
+                <Marquee gradient gradientColor='#1b1233' gradientWidth={100}>
                   {marqueeTitles.join('  |  ') + ' '}
                 </Marquee>
-                <Marquee>
+                <Marquee gradient gradientColor='#1b1233' gradientWidth={100}>
                   {technologies.join('  |  ') + ' '}
                 </Marquee>
               </div>
@@ -62,26 +62,27 @@ export default function LandingPage() {
                 experiences.
                 
                 I have a degree
-                in <a className='bg-green' href='/education#cmu'>Computer Science and Art from Carnegie Mellon University</a>,
+                in <a href='/education#cmu'>Computer Science and Art from Carnegie Mellon University</a>,
                 and am always looking to solve creative technical challenges.
                 
                 I have a strong background in web apps and
                 full-stack development, and even had the opportunity to build
-                a <a className='bg-green underline' target='_blank' href='https://iontank.com/projects/drumbar'>5-story cylindrical TV screen</a>.
+                a <a target='_blank' href='https://iontank.com/projects/drumbar'>5-story cylindrical TV screen</a>.
                 </div>
                 <div>
                 I am currently working as a Senior Software Engineer
-                at <a className='bg-green' href='/experience#dbt-labs'>dbt Labs</a>, where I
-                turned a hackathon win into a flagship product <a className='bg-green underline' target='_blank' href="https://www.getdbt.com/blog/proactively-improve-your-dbt-projects-with-new-dbt-explorer-features">dbt Explorer</a>.
+                at <a href='/experience#dbt-labs'>dbt Labs</a>, where I
+                turned a hackathon win into a flagship product <a target='_blank' href="https://www.getdbt.com/blog/proactively-improve-your-dbt-projects-with-new-dbt-explorer-features">dbt Explorer</a>.
                 
                 Formerly, I worked
-                at companies like <a className='bg-green' href='/experience#google'>Google</a>,
-                {' '}<a className='bg-green' href='/experience#nike'>Nike</a>, and
-                {' '}<a className='bg-green' href='/experience#iontank'>Iontank</a>.
+                at companies like <a href='/experience#google-shopping'>Google</a>,
+                {' '}<a href='/experience#nike'>Nike</a>, and
+                {' '}<a href='/experience#iontank'>Iontank</a>.
                 </div>
                 <div>
                 In my free time, I enjoy making videogames -- most recently having created
-                {' '}<a href='https://itch.io/jam/miz-jam-1/rate/738711' target='_blank' className='bg-green underline'>Bridge: The Card Game: The Video Game</a> for a game jam.
+                {' '}<a href='https://itch.io/jam/miz-jam-1/rate/738711' target='_blank'>Bridge: The Card Game: The Video Game</a> for a game jam (
+                  <a href="https://www.youtube.com/watch?v=lj866DtYVlo" target='_blank'>Dev Vlog</a>).
                 </div>
               </div>
           </div>

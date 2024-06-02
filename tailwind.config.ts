@@ -158,6 +158,14 @@ const config: Config = {
           'textShadow': '2.62px 0 1px rgba(0,30,255,0.13), -2.621px 0 1px rgba(255,0,80,0.06), 0 0 3px;'
         },
       },
+      fadeIn: {
+        '0%': {
+          'opacity': '0.0',
+        },
+        '100%': {
+          'opacity': '1.0',
+        },
+      },
       imageLoad: {
         '0%': {
           'clip-path': 'inset(0 0 88% 0);',
@@ -192,9 +200,10 @@ const config: Config = {
         '100%': {
           'clip-path': 'inset(0 0 0% 0);',
         },
-      }
+      },
     },
     animation: {
+      'fade-in': 'fadeIn 3s forwards',
       'flicker': 'flicker 0.25s infinite',
       'slow-flicker': 'slowFlicker 10s infinite',
       'chroma': 'chromaticAberration 3.5s infinite',
@@ -202,6 +211,8 @@ const config: Config = {
       'img-load': 'imageLoad 2s linear forwards',
     }
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animation-delay"),
+  ],
 };
 export default config;

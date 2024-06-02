@@ -24,7 +24,7 @@ export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, e
                     <span className="align-middle">{formatDateRange(startDate, endDate)}</span>
                 </p>
                 <p className="mt-5 whitespace-pre-line">{description}</p>
-                {externalWebsite && <a href={externalWebsite} className="text-green" target='_blank' rel='noreferrer'>Website</a>}
+                {externalWebsite && <a href={externalWebsite} target='_blank' rel='noreferrer'>Website</a>}
             </div>
             {heroImageSrc && 
             <div className="flex-0">
