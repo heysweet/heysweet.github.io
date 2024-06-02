@@ -16,7 +16,9 @@
     filter: brightness(0) saturate(100%) invert(96%) sepia(7%) saturate(1632%) hue-rotate(19deg) brightness(92%) contrast(109%);
   }
 
-  a:hover, button:hover {
+  a:hover, button:hover,
+  a:focus, button:focus,
+  a:active, button:active {
     @apply animate-chroma-lg;
     @apply text-green;
     @apply checkerboard;
