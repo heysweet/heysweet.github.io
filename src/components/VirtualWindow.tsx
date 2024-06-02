@@ -30,8 +30,8 @@ export default function VirtualWindow({
 
   return (
     <div {...props} className={twMerge('border-green border overflow-hidden', props.className)} ref={containerRef} >
-        <div className='w-full h-8 bg-green border-black border border-b-0 text-black text-lg relative'>
-          <a className='mx-2 hover:animate-chroma' href="/">andrewmsweet.com</a>
+        <div className='w-full h-8 bg-green border-black border border-b-0 text-black text-lg relative z-10 scanlines'>
+          <a className='mx-2' href="/">andrewmsweet.com</a>
           <div className='float-right'>
             {items?.map((item)=> (
               <DropdownButton

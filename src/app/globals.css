@@ -3,6 +3,22 @@
 @tailwind utilities;
 
 @layer utilities {
+  a, button {
+    @apply animate-chroma;
+  }
+
+  img:not(.skip-chroma) {
+    filter: drop-shadow(-2.3px 0 1px rgba(255,0,80,0.2)) drop-shadow(2px 0 1px rgba(80,0,255,0.4));
+  }
+
+  img.transform-green {
+    filter: brightness(0) saturate(100%) invert(96%) sepia(7%) saturate(1632%) hue-rotate(19deg) brightness(92%) contrast(109%);
+  }
+
+  a:hover, button:hover {
+    @apply animate-chroma-lg;
+  }
+
   .text-balance {
     text-wrap: balance;
   } 

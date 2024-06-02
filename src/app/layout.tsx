@@ -23,7 +23,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <body className="font-mono scanlines">
+      <body className="font-mono scanlines animate-chroma">
         <main className="h-screen flex flex-col items-center p-4 sm:p-10 mono bg-green text-green checkerboard-lg">
           <VirtualWindow title='System' className='border-black border-2 w-full max-w-6xl h-screen bg-black' items={[
             { title: 'Experience', shortTitle: 'EXP', options: relevantExperience },

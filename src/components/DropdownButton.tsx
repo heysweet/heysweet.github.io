@@ -61,7 +61,7 @@ export default function DropdownButton({
 
   return (<>
     <button className={twJoin('px-2 text-black box-border h-[31px]', className, isActive ? 'border-black' : 'border-transparent', isActive === false && 'checkerboard')} onClick={onClick} onFocus={(e)=>{}}>{title}</button>
-    {isActive && <div className='absolute w-full top-8 left-0 bg-green border-black border border-t-0'>
+    {isActive && <div className='absolute scanlines w-full top-8 left-0 bg-green border-black border border-t-0'>
       {options.map((option) => {
         return <span key={option.href} className=''>
           <Link
@@ -77,7 +77,7 @@ export default function DropdownButton({
           </Link>
         </span>;
       })}
-      <div>{selectedOption?.preview}</div>
+      <div className='bg-black text-green'>{selectedOption?.preview}</div>
     </div>}
   </>);
 }

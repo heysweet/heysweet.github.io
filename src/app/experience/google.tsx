@@ -22,7 +22,7 @@ export const google = {
     description: `
     JavaScript, Java, and Protocol Buffers.
 
-    - Ran dozens of cross-platform experiments and A/B tests to improve KPIs like revenue, conversion rates, and user engagement.
+    - Ran dozens of cross-platform experiments and A/B tests to improve KPIs like revenue, clickthrough/conversion rates, and user engagement.
     - Contributed to feature development of in-house templating language.
     - Collaborated with designers to prototype experimental shopping experiences.
     `.trim(),
