@@ -33,8 +33,8 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <body className={`${vt323Font.className} scanlines animate-chroma`}>
-        <main className="h-screen flex flex-col items-center p-4 sm:p-10 mono bg-green text-green checkerboard-lg">
+      <body className={`${vt323Font.className} animate-chroma bg-black`}>
+        <main className="h-screen flex flex-col items-center p-4 sm:p-10 mono bg-green text-green checkerboard-lg animate-slow-flicker">
           <VirtualWindow title='System' className='border-black border-2 w-full max-w-6xl h-screen bg-black' items={[
             { title: 'Experience', shortTitle: 'EXP', options: relevantExperience },
             { title: 'Education', shortTitle: 'EDU', options: education },
@@ -47,7 +47,7 @@ export default function RootLayout({
             </div>
           </VirtualWindow>
         </main>
-        <div className="motion-reduce:hidden animate-flicker opacity-25 z-10 absolute inset-0 pointer-events-none" />
+        <div className="motion-reduce:hidden animate-flicker inset-0 z-10 scanlines absolute pointer-events-none" />
       </body>
     </html>
   );

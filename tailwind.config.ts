@@ -12,28 +12,21 @@ const config: Config = {
       },
     },
     keyframes: {
-      flicker: {
-        '0%': { opacity: '0.9' },
-        '5%': { opacity: '0.1' },
-        '10%': { opacity: '0.6' },
-        '15%': { opacity: '0.3' },
-        '20%': { opacity: '0.2' },
-        '25%': { opacity: '0.8' },
-        '30%': { opacity: '0.1' },
-        '35%': { opacity: '0.4' },
-        '40%': { opacity: '0.3' },
-        '45%': { opacity: '0.9' },
-        '50%': { opacity: '0.2' },
-        '55%': { opacity: '0.7' },
-        '60%': { opacity: '0.4' },
-        '65%': { opacity: '0.7' },
-        '70%': { opacity: '0.3' },
-        '75%': { opacity: '0.1' },
-        '80%': { opacity: '0.5' },
-        '85%': { opacity: '0.6' },
-        '90%': { opacity: '0.9' },
-        '95%': { opacity: '0.35' },
-        '100%': { opacity: '0.4' },
+      flicker : {
+        '0%, 45%, 90%': { opacity: '0.6' },
+        '5%, 20%, 30%, 50%, 75%, 95%': { opacity: '0.5' },
+        '10%, 25%, 55%, 65%, 85%': { opacity: '0.525' },
+        '15%, 35%, 60%, 70%, 100%': { opacity: '0.45' },
+        '40%, 80%': { opacity: '0.5' },
+      },
+      slowFlicker: {
+        '10%, 10.225%, 10.45%': { opacity: '1.0' },
+        '10.025%, 10.15%, 10.375%': { opacity: '0.85' },
+        '10.05%, 10.257%, 10.325%': { opacity: '0.7' },
+        '10.075%, 10.2%, 10.35%': { opacity: '0.75' },
+        '10.1%, 10.025%': { opacity: '0.9' },
+        '10.175%, 10.3%, 10.5%': { opacity: '0.9' },
+        '10.51%': { opacity: '1.0' },
       },
       chromaticAberrationHover: {
         '0%': {
@@ -98,71 +91,6 @@ const config: Config = {
         },
         '100%': {
           'textShadow': '2.62px 0 1px rgba(0,30,255,0.5), -2.621px 0 1px rgba(255,0,80,0.3), 0 0 3px;'
-        },
-      },
-      imgChroma: {
-        '0%': {
-          'opacity': '0.44',
-        },
-        '5%': {
-          'opacity': '0.7',
-        },
-        '10%': {
-          'opacity': '0.03',
-        },
-        '15%': {
-          'opacity': '0.40',
-        },
-        '20%': {
-          'opacity': '0.95',
-        },
-        '25%': {
-          'opacity': '0.4',
-        },
-        '30%': {
-          'opacity': '0.70',
-        },
-        '35%': {
-          'opacity': '1',
-        },
-        '40%': {
-          'opacity': '0.9',
-        },
-        '45%': {
-          'opacity': '0.6',
-        },
-        '50%': {
-          'opacity': '0.08',
-        },
-        '55%': {
-          'opacity': '0.8',
-        },
-        '60%': {
-          'opacity': '0.75',
-        },
-        '65%': {
-          'opacity': '0.7',
-        },
-        '70%': {
-          'opacity': '0.49',
-        },
-        '75%': {
-          'opacity': '0.3',
-        },
-        '80%': {
-          'opacity': '0.1',
-        },
-        '85%': {
-          'opacity': '0.3',
-        },
-        '90%': {
-          'opacity': '0.95',
-        },
-        '95%': {
-          'opacity': '0.7',
-        },
-        '100%': {
-          'opacity': '0.75',
         },
       },
       chromaticAberration: {
@@ -267,8 +195,8 @@ const config: Config = {
       }
     },
     animation: {
-      flicker: 'flicker 0.2s infinite',
-      'img-chroma': 'imageChroma 3.5s infinite',
+      'flicker': 'flicker 0.25s infinite',
+      'slow-flicker': 'slowFlicker 10s infinite',
       'chroma': 'chromaticAberration 3.5s infinite',
       'chroma-lg': 'chromaticAberrationHover 3.5s infinite',
       'img-load': 'imageLoad 2s linear forwards',

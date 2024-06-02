@@ -36,5 +36,5 @@ export const carnegieMellon = {
     iconSrc: '/tartan.png',
     preview: <Preview />,
     page: <Page />,
-    href: '/experience#cmu'
+    href: '/experience/cmu'
 } satisfies Experience;

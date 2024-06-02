@@ -4,6 +4,7 @@
 
 @layer utilities {
   a, button {
+    @apply text-black;
     @apply animate-chroma;
   }
 
@@ -17,6 +18,8 @@
 
   a:hover, button:hover {
     @apply animate-chroma-lg;
+    @apply text-green;
+    @apply checkerboard;
   }
 
   .text-balance {
@@ -64,7 +67,7 @@
   }
 
   .scanlines::after {
-    animation: flicker 0.15s infinite;
+    animation: flicker 10s infinite;
     pointer-events: none;
     content: " ";
     position: absolute;

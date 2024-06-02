@@ -21,6 +21,11 @@ export type Experience = {
     endDate: Date | null;
 
     /**
+     * The URL of the hero image to display.
+     */
+    heroImageSrc?: string;
+
+    /**
      * A brief description of the experience.
      */
     description: string;
