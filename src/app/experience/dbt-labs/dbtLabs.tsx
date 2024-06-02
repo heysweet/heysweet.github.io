@@ -26,6 +26,7 @@ export const dbtLabs = {
     - Built and maintained multiple npm packages, including dbt-dag (a React library for visualizing dbt resources across dbt Cloud) and dagnabbit (a Rust library for handling selector syntax parsing and graph traversal problems).`.trim(),
 
     externalWebsite: 'https://www.getdbt.com/',
+    heroImageSrc: '/dag.png',
     iconSrc: '/dbt.png',
     preview: <Preview />,
     page: <Page />,

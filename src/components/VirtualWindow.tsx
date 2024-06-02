@@ -9,7 +9,7 @@ interface ContainerProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'ref
   items?: Omit<DropdownButtonProps, 'open' | 'close'>[];
 }
 
-const SHORT_TITLE_MAX_WIDTH = 520;
+const SHORT_TITLE_MAX_WIDTH = 740;
 
 /**
  * VirtualWindow is a container with a top bar for menu items,
@@ -29,7 +29,7 @@ export default function VirtualWindow({
   const shouldUseShortTitle = size?.width != null && size.width < SHORT_TITLE_MAX_WIDTH;
 
   return (
-    <div {...props} className={twMerge('border-green border overflow-clip relative', props.className)} ref={containerRef} >
+    <div {...props} className={twMerge('border-green border overflow-clip relative h-full', props.className)} ref={containerRef} >
         <div className='w-full absolute top-0 h-8 bg-green border-black border border-b-0 text-black text-2xl z-10'>
           <a className='p-2' href="/">andrewmsweet.com</a>
           <div className='float-right'>

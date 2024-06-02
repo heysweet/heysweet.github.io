@@ -40,10 +40,9 @@ export default function RootLayout({
             { title: 'Experience', shortTitle: 'EXP', options: relevantExperience },
             { title: 'Education', shortTitle: 'EDU', options: education },
             { title: 'Projects', shortTitle: 'PROJ', options: projects },
-            { title: 'Languages', shortTitle: 'LANG', options: [] },
-            { title: 'About', shortTitle: 'ABT', options: [] }
+            { title: 'Creative-Coding', shortTitle: 'ART', options: [] },
             ]}>
-            <div className='flex m-4'>
+            <div className='m-4'>
               {children}
             </div>
           </VirtualWindow>

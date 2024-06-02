@@ -20,7 +20,7 @@ export const nike = {
     endDate: new Date('2016-07-31'),
 
     description: `
-    JavaScript, Objective-C, Java, and Node.js.
+    JavaScript, Objective-C (iOS), Java (Android), and Node.js.
 
     - Developed JavaScript web app, iOS SDK, Android SDK, node.js validation service, and supported legacy Java code for Universal Login & Registration (UNITE) platform
     - Developed Automated Build & Test framework with Continuous Delivery to production with high availability

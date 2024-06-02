@@ -11,12 +11,13 @@ type ResumeProps = {
     externalWebsite: string | null;
     
     description: string;
+    heroImageSrc?: string;
 }
 
-export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, externalWebsite, description }: ResumeProps) => {
+export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, externalWebsite, description, heroImageSrc }: ResumeProps) => {
     return (
         <div className='flex flex-row p-4 text-lg bg-black text-green border border-green'>
-            <div>
+            <div className="flex-1">
                 <h3 className="whitespace-nowrap">{jobTitle}</h3>
                 <p className="whitespace-nowrap space-x-2">
                     <Image src="/calendar.png" alt="Work dates" width={16} height={16} priority className="ml-1 inline align-middle transform-green skip-chroma" />
@@ -25,6 +26,14 @@ export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, e
                 <p className="mt-5 whitespace-pre-line">{description}</p>
                 {externalWebsite && <a href={externalWebsite} className="text-green" target='_blank' rel='noreferrer'>Website</a>}
             </div>
+            {heroImageSrc && 
+            <div className="flex-0">
+                <Image className="ml-4 skip-chroma animate-img-load"
+                    src={heroImageSrc}
+                    width={450}
+                    height={300}
+                    alt='' />
+            </div>}
         </div>
     );
 }

@@ -1,7 +1,7 @@
-import { Project } from "../types";
+import { Project } from "./types";
 
-export const Drumbar = {
-    name: "5-Story Cylindrical LED Display",
+export const drumbar = {
+    name: "5-Story Cylindrical LED Display for Rivers Casino",
     employer: 'Iontank',
     title: "Lead Software Developer",
     iconSrc: '/iontank.png',

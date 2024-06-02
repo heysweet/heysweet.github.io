@@ -67,6 +67,7 @@ export default function DropdownButton({
           <Link
             className='whitespace-nowrap flex items-center space-x-1 pl-2 pr-6'
             href={option.href}
+            target={option.href.startsWith('/') ? undefined : '_blank'}
             onFocus={() => onFocus(option.href)}
             onMouseOver={() => onHover(option.href)}
             onBlur={onBlur}

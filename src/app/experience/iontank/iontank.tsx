@@ -33,5 +33,5 @@ export const iontank = {
     iconSrc: '/iontank.png',
     preview: <Preview />,
     page: <Page />,
-    href: '/experience#iontank'
+    href: '/experience#iontank',
 } satisfies Experience;

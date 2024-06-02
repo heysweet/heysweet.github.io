@@ -20,7 +20,6 @@
   a:focus, button:focus,
   a:active, button:active {
     @apply animate-chroma-lg;
-    @apply text-green;
     @apply checkerboard;
   }
 
