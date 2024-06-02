@@ -29,8 +29,8 @@ export default function VirtualWindow({
   const shouldUseShortTitle = size?.width != null && size.width < SHORT_TITLE_MAX_WIDTH;
 
   return (
-    <div {...props} className={twMerge('border-green border overflow-hidden', props.className)} ref={containerRef} >
-        <div className='w-full h-8 bg-green border-black border border-b-0 text-black text-2xl relative z-10'>
+    <div {...props} className={twMerge('border-green border overflow-clip relative', props.className)} ref={containerRef} >
+        <div className='w-full absolute top-0 h-8 bg-green border-black border border-b-0 text-black text-2xl z-10'>
           <a className='p-2' href="/">andrewmsweet.com</a>
           <div className='float-right'>
             {items?.map((item)=> (
@@ -45,7 +45,7 @@ export default function VirtualWindow({
             ))}
           </div>
         </div>
-        <div className='w-full h-full overflow-auto'>{children}</div>
+        <div className='w-full h-full overflow-auto py-8'>{children}</div>
     </div>
   );
 }

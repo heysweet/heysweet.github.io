@@ -73,7 +73,7 @@ export default function DropdownButton({
             onMouseOut={() => onHover()}>
               {option.iconSrc && <Image className='inline-block mr-2' src={option.iconSrc} alt="Brand logo" width={16} height={16}/>}
               <span className='flex-1'>{option.name}</span>
-              <span className='pl-4 flex-1 truncate text-right'>{formatDateDuration(option.startDate, option.endDate)}</span>
+              {option.startDate && <span className='pl-4 flex-1 truncate text-right'>{formatDateDuration(option.startDate, option.endDate)}</span>}
           </Link>
         </span>;
       })}

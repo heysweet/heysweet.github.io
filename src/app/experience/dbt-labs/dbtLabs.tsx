@@ -1,5 +1,5 @@
 import { Experience } from '@/types/PagePreview';
-import { Resume } from './resume';
+import { Resume } from '../resume';
 
 const Preview: React.FC = () => {
     return (<Resume {...dbtLabs} />)
@@ -29,5 +29,5 @@ export const dbtLabs = {
     iconSrc: '/dbt.png',
     preview: <Preview />,
     page: <Page />,
-    href: '/experience/dbt-labs'
+    href: '/experience#dbt-labs'
 } satisfies Experience;

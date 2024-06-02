@@ -6,6 +6,7 @@ import "./globals.css";
 import Head from "next/head";
 
 import { VT323 } from 'next/font/google';
+import { projects } from "./projects";
 
 export const vt323Font = VT323({
   weight: '400',
@@ -35,10 +36,10 @@ export default function RootLayout({
       </Head>
       <body className={`${vt323Font.className} animate-chroma bg-black`}>
         <main className="h-screen flex flex-col items-center p-4 sm:p-10 mono bg-green text-green checkerboard-lg animate-slow-flicker">
-          <VirtualWindow title='System' className='border-black border-2 w-full max-w-6xl h-screen bg-black' items={[
+          <VirtualWindow title='System' className='border-black border-2 w-full max-w-6xl bg-black' items={[
             { title: 'Experience', shortTitle: 'EXP', options: relevantExperience },
             { title: 'Education', shortTitle: 'EDU', options: education },
-            { title: 'Projects', shortTitle: 'PROJ', options: [/*'test', 'test2'*/] },
+            { title: 'Projects', shortTitle: 'PROJ', options: projects },
             { title: 'Languages', shortTitle: 'LANG', options: [] },
             { title: 'About', shortTitle: 'ABT', options: [] }
             ]}>

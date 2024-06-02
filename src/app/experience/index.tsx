@@ -1,4 +1,4 @@
-import { dbtLabs } from './dbtLabs';
+import { dbtLabs } from './dbt-labs/dbtLabs';
 import { google } from './google';
 import { iontank } from './iontank/iontank';
 import { nike } from './nike';

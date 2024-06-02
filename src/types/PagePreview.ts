@@ -14,7 +14,7 @@ export type Experience = {
     /**
      * The start date of the experience.
      */
-    startDate: Date;
+    startDate: Date | null;
     /**
      * The end date of the experience.
      */
