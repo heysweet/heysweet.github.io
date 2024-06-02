@@ -45,7 +45,7 @@ export default function VirtualWindow({
             ))}
           </div>
         </div>
-        <div>{children}</div>
+        <div className='w-full h-full overflow-auto'>{children}</div>
     </div>
   );
 }
