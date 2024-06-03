@@ -21,7 +21,7 @@ export const dbtLabs = {
     endDate: null, // Still work here
 
     description: `
-    TypeScript, React, Rust, Node.js, Python, Redis, and GraphQL.
+    TypeScript, React, Rust, Node.js, Python, Postgres, Redis, and GraphQL.
 
     - Transformed my hackathon-winning project into dbt Explorer, a flag-ship product for dbt Labs.
     - Built and maintained multiple npm packages, including dbt-dag (a React library for visualizing dbt resources across dbt Cloud) and dagnabbit (a Rust library for handling selector syntax parsing and graph traversal problems).`.trim(),

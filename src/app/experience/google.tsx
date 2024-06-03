@@ -20,13 +20,24 @@ export const google = {
     startDate: new Date('2017-12-01'),
     endDate: new Date('2021-02-28'),
 
-    description: `
-    JavaScript, Java, Protocol Buffers, and contributed to internal templating language js-lite.
-
+    description: <>
+    <div className='mb-4'>
+    JavaScript, Java, Protocol Buffers, Accesibility, Internationalization, A/B Testing, and Experimentation.
+    </div>
+    
+    <div>
     - Ran dozens of cross-platform experiments and A/B tests to improve KPIs like revenue, clickthrough/conversion rates, and user engagement.
-    - Contributed to feature development of in-house templating language.
+    </div>
+    <div>
+    - Acted as Accessibility Lead for the Shopping team, ensuring compliance with WCAG 2.1 AA standards.
+    </div>
+    <div>
     - Collaborated with designers to prototype experimental shopping experiences.
-    `.trim(),
+    </div>
+    <div>
+    - Contributed to feature development of in-house templating language.
+    </div>
+    </>,
 
     externalWebsite: 'https://www.google.com/search?tbm=shop&hl=en&psb=1&q=shoes',
     iconSrc: '/google.png',

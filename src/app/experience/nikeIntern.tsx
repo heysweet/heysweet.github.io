@@ -25,7 +25,7 @@ export const nikeIntern = {
     - Optimized existing legacy codebase after analysis of inefficiencies
     - Provided back-end services for a number of consumer-facing platforms
     - Onboarded new individuals, enabling efficient knowledge transfer
-    - Acted within an existing scrum team
+    - Delivered software through agile methodology as a part of a scrum team
     
     Cross Functional Project (Leadership and Design):
     - Lead a team of 9 interns through an app development process
