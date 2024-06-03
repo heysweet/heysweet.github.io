@@ -15,14 +15,12 @@ const Page: React.FC = () => {
 export const carnegieMellon = {
     id: 'cmu',
     name: 'Carnegie Mellon University',
-    title: 'Student',
+    title: 'Bachelor of Computer Science and Art',
 
     startDate: new Date('2011-09-01'),
     endDate: new Date('2015-09-01'),
 
     description: `
-    Bachelors of Computer Science and Art
-
     Sample of Advanced Coursework:
     - Interactive Art and Computational Design
     - Great Theoretical Ideas of Computer Science

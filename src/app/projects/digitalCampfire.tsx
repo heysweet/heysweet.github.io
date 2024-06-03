@@ -17,7 +17,8 @@ export const digitalCampfire = {
 
     startDate: null,
     endDate: null,
-    description: <>
+    description: <div className="space-y-4">
+    <div>
     The Google Digital Campfire is an interactive art-object designed to evoke the
     feeling of sharing stories with friends around a glowing fire. Today, Google hosts
     conversations with their clients around Digital Campfires in multiple cities
@@ -35,8 +36,9 @@ export const digitalCampfire = {
     the welcoming warmth of a fire, or to display changes in state. The custom software
     suite allows video playback mapped across all devices, image searches, and animations
     - all synced within milliseconds.
-    <div>- <a href="https://iontank.com/projects/campfire" target="_blank">See videos and photos</a></div>
-    </>,
+    </div>
+    <div><a href="https://iontank.com/projects/campfire" target="_blank">See videos and photos</a></div>
+    </div>,
     href: "/projects#digital-campfire",
     preview: <Preview />,
 } satisfies Project;
