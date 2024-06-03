@@ -60,7 +60,14 @@ export default function DropdownButton({
   }, DEBOUNCE_MILLIS);
 
   return (<>
-    <button className={twJoin('px-2 box-border h-[31px]', className, isActive ? 'border-black' : 'border-transparent', isActive === false && 'checkerboard')} onClick={onClick} onFocus={(e)=>{}}>{title}</button>
+    <button
+      role='menuitem'
+      aria-haspopup="menu"
+      className={twJoin('px-2 box-border h-[31px]', className, isActive ? 'border-black' : 'border-transparent', isActive === false && 'checkerboard')}
+      onClick={onClick}
+      onFocus={(e)=>{}}>
+        {title}
+    </button>
     {isActive && <div className='absolute w-full top-8 left-0 bg-green border-black border border-t-0'>
       {options.map((option) => {
         return <span key={option.href} className=''>

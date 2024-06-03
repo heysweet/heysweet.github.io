@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 /**
  * A standardized format for Relevant Experiences.
  */
@@ -28,7 +30,7 @@ export type Experience = {
     /**
      * A brief description of the experience.
      */
-    description: string;
+    description: ReactNode;
 
     /**
      * The URL of the page to link to.

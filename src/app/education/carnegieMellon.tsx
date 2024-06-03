@@ -32,9 +32,8 @@ export const carnegieMellon = {
     - Experimental Game Design
 `.trim(),
 
-    externalWebsite: 'https://jobs.nike.com/internships',
     iconSrc: '/tartan.png',
     preview: <Preview />,
     page: <Page />,
-    href: '/experience#cmu'
+    href: '/education#cmu'
 } satisfies Experience;
