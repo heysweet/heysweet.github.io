@@ -35,7 +35,7 @@ export const google = {
     - Collaborated with designers to prototype experimental shopping experiences.
     </div>
     <div>
-    - Contributed to feature development of in-house templating language.
+    - Contributed to feature development of in-house templating language JSLite.
     </div>
     </>,
 
