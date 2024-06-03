@@ -13,7 +13,7 @@ export const digitalCampfire = {
     title: "Lead Software Developer",
     iconSrc: '/iontank.png',
 
-    heroImageSrc: '/drumbar.png',
+    heroImageSrc: '/campfire.png',
 
     startDate: null,
     endDate: null,
