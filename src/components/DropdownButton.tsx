@@ -63,7 +63,7 @@ export default function DropdownButton({
     <button
       role='menuitem'
       aria-haspopup="menu"
-      className={twJoin('px-2 box-border h-[31px]', className, isActive ? 'border-black' : 'border-transparent', isActive === false && 'checkerboard')}
+      className={twJoin('px-2 box-border h-[31px]', className, isActive ? 'border-black' : 'border-transparent', isActive === false ? 'checkerboard' : 'no-checkerboard')}
       onClick={onClick}
       onFocus={(e)=>{}}>
         {title}
