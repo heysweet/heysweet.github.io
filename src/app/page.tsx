@@ -12,12 +12,11 @@ const marqueeTitles = [
 
 const technologies = [
   'JS',
-  'TypeScript',
   'Rust/WASM',
   'd3',
   'python',
   'django',
-  'JS',
+  'TypeScript',
   'React',
   'Tailwind',
   'GraphQL',
@@ -54,7 +53,7 @@ export default function LandingPage() {
                 <Marquee gradient gradientColor='#1b1233' gradientWidth={100} speed={20}>
                   {marqueeTitles.join('  |  ') + ' '}
                 </Marquee>
-                <Marquee gradient gradientColor='#1b1233' gradientWidth={100} speed={20}>
+                <Marquee gradient gradientColor='#1b1233' gradientWidth={100} speed={35}>
                   {technologies.join('  |  ') + ' '}
                 </Marquee>
               </div>
