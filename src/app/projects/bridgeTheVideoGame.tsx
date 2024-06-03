@@ -11,6 +11,7 @@ export const bridgeTheVideoGame = {
     title: "Developed with Dan Wilkerson",
     startDate: null,
     endDate: null,
+    heroImageSrc: '/bridge.png',
     description: <>
         <div className="mb-4">
             Bridge: The Card Game: The Video Game is a turn based strategy game that
