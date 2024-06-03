@@ -1,5 +1,7 @@
 # heysweet.github.io
 
+<img width="980" alt="image" src="https://github.com/heysweet/heysweet.github.io/assets/1190438/d14f4527-109f-4e4e-a436-48339bac2ef1">
+
 This website is a portfolio and blog site that I built using React, TypeScript, NextJS, and Tailwind CSS.
 
 It is hosted on GitHub Pages and uses GitHub Actions for CI/CD.
