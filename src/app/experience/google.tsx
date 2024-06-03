@@ -22,9 +22,9 @@ export const google = {
 
     description: <>
     <div className='mb-4'>
-    JavaScript, Java, Protocol Buffers, Accesibility, Internationalization, A/B Testing, and Experimentation.
+    JavaScript, Java, Protocol Buffers, Accessibility, Internationalization, A/B Testing, and Experimentation.
     </div>
-    
+
     <div>
     - Ran dozens of cross-platform experiments and A/B tests to improve KPIs like revenue, clickthrough/conversion rates, and user engagement.
     </div>
