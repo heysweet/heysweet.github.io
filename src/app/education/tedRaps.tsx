@@ -13,6 +13,7 @@ const Page: React.FC = () => {
 };
 
 export const tedRaps = {
+    id: 'ted-raps',
     name: 'tedRaps',
     title: 'Interactive Art and Computational Design Project',
 
@@ -30,5 +31,5 @@ export const tedRaps = {
 
     preview: <Preview />,
     page: <Page />,
-    href: '/education#tedraps'
+    href: '/education#ted-raps'
 } satisfies Experience;

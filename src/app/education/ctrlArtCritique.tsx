@@ -13,6 +13,7 @@ const Page: React.FC = () => {
 };
 
 export const ctrlArtCritique = {
+    id: 'ctrl-art-critique',
     name: 'ctrl+art+critique',
     title: 'Capstone Project',
 
@@ -40,5 +41,5 @@ export const ctrlArtCritique = {
 
     preview: <Preview />,
     page: <Page />,
-    href: '/education#cmu'
+    href: '/education#ctrl-art-critique'
 } satisfies Experience;

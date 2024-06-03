@@ -13,6 +13,7 @@ const Page: React.FC = () => {
 };
 
 export const dbtLabs = {
+    id: 'dbt-labs',
     name: 'dbt Labs',
     title: 'Senior Software Engineer',
 

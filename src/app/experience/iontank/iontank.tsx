@@ -13,13 +13,12 @@ const Page: React.FC = () => {
 };
 
 export const iontank = {
+    id: 'iontank',
     name: 'Iontank',
     title: 'Creative Technologist',
 
     startDate: new Date('2016-10-01'),
     endDate: new Date('2017-12-01'),
-
-    heroImageSrc: '/drumbar.png',
 
     description: `
     JavaScript, Python, RabbitMQ, and Redis.

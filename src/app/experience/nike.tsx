@@ -13,6 +13,7 @@ const Page: React.FC = () => {
 };
 
 export const nike = {
+    id: 'nike',
     name: 'Nike',
     title: 'Software Engineer',
 

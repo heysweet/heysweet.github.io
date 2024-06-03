@@ -1,6 +1,8 @@
+import { Experience } from "@/types/PagePreview";
+import { bridgeTheVideoGame } from "./bridgeTheVideoGame";
 import { digitalCampfire } from "./digitalCampfire";
 import { drumbar } from "./drumbar";
 import { thisWebsite } from "./thisWebsite";
 
 
-export const projects = [thisWebsite, drumbar, digitalCampfire];
+export const projects: Experience[] = [thisWebsite, drumbar, digitalCampfire, bridgeTheVideoGame];

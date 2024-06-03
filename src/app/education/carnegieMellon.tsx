@@ -13,6 +13,7 @@ const Page: React.FC = () => {
 };
 
 export const carnegieMellon = {
+    id: 'cmu',
     name: 'Carnegie Mellon University',
     title: 'Student',
 

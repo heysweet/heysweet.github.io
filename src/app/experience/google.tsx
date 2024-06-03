@@ -13,6 +13,7 @@ const Page: React.FC = () => {
 };
 
 export const google = {
+    id: 'google-shopping',
     name: 'Google Shopping',
     title: 'Software Engineer III',
 

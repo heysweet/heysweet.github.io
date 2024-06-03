@@ -5,6 +5,10 @@ import { ReactNode } from "react";
  */
 export type Experience = {
     /**
+     * A unique identifier for the Experience.
+     */
+    id: string;
+    /**
      * The name of the Experience.
      */
     name: string;
