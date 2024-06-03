@@ -1,6 +1,6 @@
 # heysweet.github.io
 
-<img width="980" alt="image" src="https://github.com/heysweet/heysweet.github.io/assets/1190438/d14f4527-109f-4e4e-a436-48339bac2ef1">
+<img alt="Preview of what the portfolio website looks like. 1-bit retro aesthetic with bright green and dark purple color palette" width="1076" alt="image" src="https://github.com/heysweet/heysweet.github.io/assets/1190438/876288fa-24fc-4c40-874c-a5a0f5692ced">
 
 This website is a portfolio and blog site that I built using React, TypeScript, NextJS, and Tailwind CSS.
 
