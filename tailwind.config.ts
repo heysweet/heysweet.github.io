@@ -208,7 +208,7 @@ const config: Config = {
       'slow-flicker': 'slowFlicker 10s infinite',
       'chroma': 'chromaticAberration 3.5s infinite',
       'chroma-lg': 'chromaticAberrationHover 3.5s infinite',
-      'img-load': 'imageLoad 2s linear forwards',
+      'img-load': 'imageLoad 0.24s linear forwards',
     }
   },
   plugins: [
