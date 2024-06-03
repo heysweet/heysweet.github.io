@@ -20,20 +20,33 @@ export const nikeIntern = {
     startDate: new Date('2014-06-01'),
     endDate: new Date('2014-08-31'),
 
-    description: `
+    description: <div className='space-y-4'>
+    <div>
     Consumer Account Management Automation Framework Engineering:
+    <br />
     - Optimized existing legacy codebase after analysis of inefficiencies
+    <br />
     - Provided back-end services for a number of consumer-facing platforms
+    <br />
     - Onboarded new individuals, enabling efficient knowledge transfer
+    <br />
     - Delivered software through agile methodology as a part of a scrum team
+    </div>
     
+    <div>
     Cross Functional Project (Leadership and Design):
+    <br />
     - Lead a team of 9 interns through an app development process
-    - Coordinated with Nike leadership in Events Services, Legal, Internal Communications for design, implementation forecasting, maintenance planning, and legal clearance
+    <br />
+    - Coordinated with Nike leadership in Events Services, Legal, Internal
+    Communications for design, implementation forecasting, maintenance planning, and legal clearance
+    <br />
     - Presented concept in front of a large audience of Nike leadership and peers
-    `.trim(),
+    </div>
+    <div><a href='https://jobs.nike.com/internships' target='_blank'>Nike Internship Program</a></div>
+    </div>,
 
-    externalWebsite: 'https://jobs.nike.com/internships',
+    externalWebsite: '',
     iconSrc: '/nike.png',
     preview: <Preview />,
     page: <Page />,

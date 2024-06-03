@@ -20,17 +20,25 @@ export const nike = {
     startDate: new Date('2015-07-01'),
     endDate: new Date('2016-07-31'),
 
-    description: `
+    description: <div className='space-y-4'>
+    <div>
     JavaScript, Objective-C (iOS), Java (Android), and Node.js.
+    </div>
 
+    <div>
     - Developed JavaScript web app, iOS SDK, Android SDK, node.js validation service, and supported legacy Java code for Universal Login & Registration (UNITE) platform
+    <br />
     - Developed Automated Build & Test framework with Continuous Delivery to production with high availability
+    <br />
     - Supported onboarding integration with our APIs with nike.com
+    <br />
     - Built app-to-web url authentication, web session management, and login continuity support for native and web experiences
+    <br />
     - Followed Test Driven Development and other agile practices within a certified scrum team
-    `.trim(),
+    </div>
+    <div><a href="https://nike.com/" target='_blank'>nike.com</a></div>
+    </div>,
 
-    externalWebsite: 'https://nike.com/',
     iconSrc: '/nike.png',
     preview: <Preview />,
     page: <Page />,

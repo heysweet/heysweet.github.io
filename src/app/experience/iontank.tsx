@@ -20,26 +20,24 @@ export const iontank = {
     startDate: new Date('2016-10-01'),
     endDate: new Date('2017-12-01'),
 
-    description: <>
-    <div className='mb-4'>
+    description: <div className='space-y-4'>
+    <div>
     JavaScript, Python, OpenFrameworks, C++, RabbitMQ, and EAGLE for PCB designs.
     </div>
 
     <div>
     - Developed full stack solution for <a href="/projects#drumbar">a 5-story cylindrical LED screen</a> and controls system at the Rivers Casino Pittsburgh.
-    </div>
-    <div>
+    <br />
     - Devised automated CI and testing pipeline for remote installations.
-    </div>
-    <div>
+    <br />
     - Implemented remote project tracking and an up-to-the-minute notification system for permanent on-site installations.
-    </div>
-    <div>
+    <br />
     - Designed an interactive 3D LED grid firework simulation for a temporary installation for OREO.
+    <br />
+    - Designed and developed <a href="https://iontank.com/" target='_blank'>iontank.com</a>
     </div>
-    </>,
+    </div>,
 
-    externalWebsite: 'https://iontank.com/',
     iconSrc: '/iontank.png',
     preview: <Preview />,
     page: <Page />,

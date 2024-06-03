@@ -20,13 +20,19 @@ export const dbtLabs = {
     startDate: new Date('2021-04-01'),
     endDate: null, // Still work here
 
-    description: `
+    description: <div className='space-y-4'>
+    <div>
     TypeScript, React, Rust, Node.js, Python, Postgres, Redis, and GraphQL.
+    </div>
 
+    <div>
     - Transformed my hackathon-winning project into dbt Explorer, a flag-ship product for dbt Labs.
-    - Built and maintained multiple npm packages, including dbt-dag (a React library for visualizing dbt resources across dbt Cloud as a Directed Acyclic Graph) and dagnabbit (a Rust library for handling selector syntax parsing and graph traversal for subgraph selection).`.trim(),
+    <br />
+    - Built and maintained multiple npm packages, including dbt-dag (a React library for visualizing dbt resources across dbt Cloud as a Directed Acyclic Graph) and dagnabbit (a Rust library for handling selector syntax parsing and graph traversal for subgraph selection).
+    </div>
+    <div><a href="https://www.getdbt.com/" target='_blank'>getdbt.com</a></div>
+    </div>,
 
-    externalWebsite: 'https://www.getdbt.com/',
     heroImageSrc: '/dag.png',
     iconSrc: '/dbt.png',
     preview: <Preview />,
