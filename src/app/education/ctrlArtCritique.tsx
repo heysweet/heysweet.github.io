@@ -16,6 +16,7 @@ export const ctrlArtCritique = {
     id: 'ctrl-art-critique',
     name: 'ctrl+art+critique',
     title: 'Capstone Project',
+    iconSrc: '/youtube.png',
 
     startDate: null,
     endDate: null,

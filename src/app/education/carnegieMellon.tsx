@@ -33,7 +33,7 @@ export const carnegieMellon = {
     - Experimental Game Design
 `.trim(),
 
-    iconSrc: '/tartan.png',
+    iconSrc: '/cmu.png',
     preview: <Preview />,
     page: <Page />,
     href: '/education#cmu'

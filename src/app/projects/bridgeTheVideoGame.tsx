@@ -9,6 +9,7 @@ export const bridgeTheVideoGame = {
     id: 'bridge-game',
     name: "Bridge: The Card Game: The Video Game",
     title: "Developed with Dan Wilkerson",
+    iconSrc: '/bridgei.png',
     startDate: null,
     endDate: null,
     heroImageSrc: '/bridge.png',

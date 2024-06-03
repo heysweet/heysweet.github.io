@@ -16,6 +16,7 @@ export const tedRaps = {
     id: 'ted-raps',
     name: 'tedRaps',
     title: 'Interactive Art and Computational Design Project',
+    iconSrc: '/ted.png',
 
     startDate: null,
     endDate: null,
