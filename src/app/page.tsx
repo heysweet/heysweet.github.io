@@ -84,7 +84,7 @@ export default function LandingPage() {
                 </div>
                 <div>
                 In my free time, I enjoy making videogames -- most recently having created
-                {' '}<a href='https://itch.io/jam/miz-jam-1/rate/738711' className='whitespace-nowrap' target='_blank'>Bridge: The Card Game: The Video Game</a> for a game jam (
+                {' '}<a href='https://itch.io/jam/miz-jam-1/rate/738711' className='whitespace-break-spaces' target='_blank'>Bridge: The Card Game: The Video Game</a> for a game jam (
                   <a href="https://www.youtube.com/watch?v=lj866DtYVlo" target='_blank'>Dev Vlog</a>).
                 </div>
               </div>
