@@ -26,7 +26,7 @@ export const nike = {
     </div>
 
     <div>
-    - Developed JavaScript web app, iOS SDK, Android SDK, node.js validation service, and supported legacy Java code for Universal Login & Registration (UNITE) platform
+    - Developed JavaScript web app, iOS SDK, Android SDK, node.js validation service, and supported legacy Java services for Universal Login & Registration (UNITE) platform
     <br />
     - Developed Automated Build & Test framework with Continuous Delivery to production with high availability
     <br />

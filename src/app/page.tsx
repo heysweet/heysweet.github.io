@@ -6,7 +6,7 @@ const marqueeTitles = [
   'Sr. Software Engineer',
   'Creative Technologist',
   'Xoogler',
-  'Accessibility Team Lead @ Google',
+  'Team Accessibility Lead',
   'Full-',
 ];
 

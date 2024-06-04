@@ -20,6 +20,8 @@ export const iontank = {
     startDate: new Date('2016-10-01'),
     endDate: new Date('2017-12-01'),
 
+    heroImageSrc: '/drumbar.png',
+
     description: <div className='space-y-4'>
     <div>
     JavaScript, Python, OpenFrameworks, C++, RabbitMQ, and EAGLE for PCB designs.
@@ -34,7 +36,9 @@ export const iontank = {
     <br />
     - Designed an interactive 3D LED grid firework simulation for a temporary installation for OREO.
     <br />
-    - Designed and developed <a href="https://iontank.com/" target='_blank'>iontank.com</a>
+    </div>
+    <div>
+    Designed and developed <a href="https://iontank.com/" target='_blank'>iontank.com</a>
     </div>
     </div>,
 

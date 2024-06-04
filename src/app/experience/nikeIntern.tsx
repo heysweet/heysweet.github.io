@@ -39,7 +39,7 @@ export const nikeIntern = {
     - Lead a team of 9 interns through an app development process
     <br />
     - Coordinated with Nike leadership in Events Services, Legal, Internal
-    Communications for design, implementation forecasting, maintenance planning, and legal clearance
+    Communications for design and implementation forecasting
     <br />
     - Presented concept in front of a large audience of Nike leadership and peers
     </div>

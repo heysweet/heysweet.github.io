@@ -8,15 +8,24 @@ const Preview: React.FC = () => {
 export const thisWebsite = {
     id: 'this-website',
     name: "andrewmsweet.com",
-    title: "This Website",
+    title: "The Website You're On Now!",
     iconSrc: '/github.png',
+
+    heroImageSrc: '/thissite.png',
+
     startDate: null,
     endDate: null,
     description: <div className="space-y-4">
+    <div>React, TypeScript, NextJS, Tailwind CSS, and GitHub Actions for CI/CD</div>
     <div>
-    This website is a portfolio and blog site that I built using React, TypeScript, NextJS, and Tailwind CSS.
-    It is hosted on GitHub Pages and uses GitHub Actions for CI/CD.
-    The site is designed to be easy to maintain and update, with a focus on performance and accessibility, and meant to showcase my work and projects.
+    The website you are on is my personal portfolio site.
+    It is designed to be easy to maintain and update, with a focus on
+    performance and accessibility, and meant to showcase my work and projects.
+    </div>
+    <div>
+    I challenged myself to build and polish it as a 1-bit (2 colors) experience, though
+    you may notice a few more colors for polish, like a chromatic aberration effect
+    on hover, or use of opacity to achieve the scanline and flicker effects.
     </div>
     <div><a href="https://github.com/heysweet/heysweet.github.io">View on GitHub</a></div>
     </div>,
