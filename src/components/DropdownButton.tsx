@@ -68,11 +68,11 @@ export default function DropdownButton({
       onFocus={(e)=>{}}>
         {title}
     </button>
-    {isActive && <div className='absolute w-full top-8 left-0 border-black border border-t-0'>
+    {isActive && <div className='absolute w-full top-8 left-0 border-black border-b bg-green'>
       {options.map((option) => {
         return <span key={option.href} className=''>
           <Link
-            className='whitespace-nowrap flex items-center space-x-1 pl-2 pr-6 overflow-hidden truncate'
+            className='whitespace-nowrap flex items-center space-x-1 pl-2 pr-6 overflow-hidden truncate bg-transparent'
             href={option.href}
             target={option.href.startsWith('/') ? undefined : '_blank'}
             onFocus={() => onFocus(option.href)}
