@@ -8,7 +8,7 @@ const Preview: React.FC = () => {
 
 export const drumbar = {
     id: 'drumbar',
-    name: "5-Story Cylindrical LED Display for Rivers Casino",
+    name: "5-Story Cylindrical LED Display",
     employer: 'Iontank',
     title: "Lead Software Developer",
     iconSrc: '/iontank.png',
