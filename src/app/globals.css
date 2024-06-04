@@ -26,15 +26,15 @@
   a:active, button:active {
     @apply animate-chroma-lg;
     @apply checkerboard;
+    @apply outline-none;
+    @apply ring-2;
+    @apply ring-green;
+    @apply ring-offset-2;
+    @apply ring-offset-black;
   }
 
   .text-balance {
     text-wrap: balance;
-  } 
-
-  button.no-checkerboard {
-    background-image: none;
-    background-size: 0 0;
   }
 
   .checkerboard {
