@@ -1,6 +1,21 @@
 import Image from 'next/image'
 import Marquee from 'react-fast-marquee';
 
+/**
+ * A quirk of the Marquee is that whitespace cannot be
+ * retained on the ends of the marquee. Because of this,
+ * the first item of this array is split across the first
+ * and last item to ensure a consistent visual.
+ */
+function accessibleMarquee(items: string[]): string {
+  const [firstItem, ...remaining] = items;
+  const lastItem = remaining.pop();
+
+  const mergedItem = `${lastItem}${firstItem}`;
+
+  return [mergedItem, ...remaining].join(', ');
+}
+
 const marqueeTitles = [
   'Stack',
   'Sr. Software Engineer',
@@ -43,21 +58,34 @@ export default function LandingPage() {
           <h1 className='text-5xl whitespace-nowrap'>Andrew Sweet</h1>
           <div className='text-2xl mt-2'>
               <div className='space-x-2 mb-4'>
-                <a href='https://www.linkedin.com/in/andrewmsweet/' target='_blank'>LinkedIn</a>
-                <a href='https://github.com/heysweet' target='_blank'>GitHub</a>
+                <h2 className='sr-only'>External Links</h2>
+                <a href='https://www.linkedin.com/in/andrewmsweet/' target='_blank'>
+                  LinkedIn
+                  <span className='sr-only'> profile</span>
+                </a>
+                <a href='https://github.com/heysweet' target='_blank'>
+                  GitHub
+                  <span className='sr-only'> profile</span>
+                </a>
                 <a href="mailto:andrewmsweet.website@gmail.com" target='_blank'>
                   <span className='sr-only'>Write an </span>Email
                 </a>
               </div>
               <div className='h-16 overflow-hidden animate-fade-in'>
-                <Marquee gradient gradientColor='#1b1233' gradientWidth={100} speed={20}>
-                  {marqueeTitles.join('  |  ') + ' '}
-                </Marquee>
-                <Marquee gradient gradientColor='#1b1233' gradientWidth={100} speed={35}>
-                  {technologies.join('  |  ') + ' '}
-                </Marquee>
+                <h2 className='sr-only'>Skills and Technology</h2>
+                <div className='sr-only'>Titles: {accessibleMarquee(marqueeTitles)}</div>
+                <div className='sr-only'>Technologies: {accessibleMarquee(technologies)}</div>
+                <div aria-hidden>
+                  <Marquee gradient gradientColor='#1b1233' gradientWidth={100} speed={20}>
+                    {marqueeTitles.join('  |  ') + ' '}
+                  </Marquee>
+                  <Marquee gradient gradientColor='#1b1233' gradientWidth={100} speed={35}>
+                    {technologies.join('  |  ') + ' '}
+                  </Marquee>
+                </div>
               </div>
               <div className='text-green my-4 space-y-2'>
+                <h2 className='sr-only'>About Me</h2>
                 <div>
                 I enjoy solving hard technical problems, and I have a passion
                 for creating polished, accessible, and performant user

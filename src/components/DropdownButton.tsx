@@ -85,7 +85,7 @@ export default function DropdownButton({
           </Link>
         </span>;
       })}
-      <div className='bg-black text-green'>{selectedOption?.preview}</div>
+      <div aria-hidden={true} className='bg-black text-green'>{selectedOption?.preview}</div>
     </div>}
   </>);
 }

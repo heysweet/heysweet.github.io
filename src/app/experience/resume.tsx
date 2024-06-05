@@ -1,6 +1,6 @@
 import { FC, ReactNode } from "react";
 import Image from 'next/image';
-import { formatDateRange } from "@/utils/date";
+import { accessibleDateRange, formatDateRange } from "@/utils/date";
 
 type ResumeProps = {
     title: string;
@@ -21,7 +21,10 @@ export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, e
                 <h3 className="whitespace-nowrap">{jobTitle}</h3>
                 {startDate && <p className="whitespace-nowrap space-x-2">
                     <Image src="/calendar.png" alt="Work dates" width={16} height={16} priority className="ml-1 inline align-middle transform-green skip-chroma" />
-                    <span className="align-middle">{formatDateRange(startDate, endDate)}</span>
+                    <span className="align-middle">
+                        <span className="sr-only">{accessibleDateRange(startDate, endDate)}</span>
+                        <span aria-hidden>{formatDateRange(startDate, endDate)}</span>
+                    </span>
                 </p>}
                 <div className="mt-5 whitespace-pre-line">{description}</div>
                 {externalWebsite && <a href={externalWebsite} target='_blank' rel='noreferrer'>Website</a>}

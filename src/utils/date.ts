@@ -10,6 +10,13 @@ export function formatDate(date: Date | null) {
     return date.toLocaleDateString(undefined, {month: '2-digit', year: 'numeric'});
 }
 
+function accessibleDate(date: Date | null) {
+    if (!date) {
+        return 'Present';
+    }
+    return date.toLocaleDateString(undefined, {month: 'long', year: 'numeric'});
+}
+
 /**
  * Formats a date range in 'MM/YYYY - MM/YYYY' format.
  * 
@@ -17,6 +24,10 @@ export function formatDate(date: Date | null) {
  */
 export function formatDateRange(start: Date, end: Date | null) {
     return `${formatDate(start)} - ${formatDate(end)}`;
+}
+
+export function accessibleDateRange(start: Date, end: Date | null) {
+    return `From ${accessibleDate(start)} to ${accessibleDate(end)}`;
 }
 
 /**
