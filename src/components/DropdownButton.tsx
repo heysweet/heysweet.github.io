@@ -72,7 +72,7 @@ export default function DropdownButton({
       {options.map((option) => {
         return <span key={option.href} className=''>
           <Link
-            className='whitespace-nowrap flex items-center select-none space-x-1 pl-2 pr-6 overflow-hidden truncate bg-transparent'
+            className='whitespace-nowrap flex items-center select-none space-x-1 pl-2 pr-6 truncate bg-transparent'
             href={option.href}
             target={option.href.startsWith('/') ? undefined : '_blank'}
             onFocus={() => onFocus(option.href)}
