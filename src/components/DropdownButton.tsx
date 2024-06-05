@@ -63,7 +63,7 @@ export default function DropdownButton({
     <button
       role='menuitem'
       aria-haspopup="menu"
-      className={twJoin('px-2 box-border h-6 leading-3 bg-transparent', className, isActive ? 'border-black' : 'border-transparent', isActive && 'checkerboard')}
+      className={twJoin('px-2 box-border h-6 leading-3 bg-transparent select-none', className, isActive ? 'border-black' : 'border-transparent', isActive && 'checkerboard')}
       onClick={onClick}
       onFocus={(e)=>{}}>
         {title}
@@ -72,7 +72,7 @@ export default function DropdownButton({
       {options.map((option) => {
         return <span key={option.href} className=''>
           <Link
-            className='whitespace-nowrap flex items-center space-x-1 pl-2 pr-6 overflow-hidden truncate bg-transparent'
+            className='whitespace-nowrap flex items-center select-none space-x-1 pl-2 pr-6 overflow-hidden truncate bg-transparent'
             href={option.href}
             target={option.href.startsWith('/') ? undefined : '_blank'}
             onFocus={() => onFocus(option.href)}
@@ -80,7 +80,7 @@ export default function DropdownButton({
             onBlur={onBlur}
             onMouseOut={() => onHover()}>
               {option.iconSrc && <Image className='inline-block mr-2' src={option.iconSrc} alt="Brand logo" width={16} height={16}/>}
-              <span className='flex-1 overflow-hidden truncate'>{option.name}</span>
+              <span className='flex-1 truncate'>{option.name}</span>
               {option.startDate && <span className='pl-4 flex-0 truncate text-right'>{formatDateDuration(option.startDate, option.endDate)}</span>}
           </Link>
         </span>;
