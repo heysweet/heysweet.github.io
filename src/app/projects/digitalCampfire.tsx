@@ -10,7 +10,7 @@ export const digitalCampfire = {
     id: 'digital-campfire',
     name: "Google Digital Campfire",
     employer: 'Iontank',
-    title: "Lead Software Developer",
+    title: "Software Developer",
     iconSrc: '/iontank.png',
 
     heroImageSrc: '/campfire.png',
@@ -18,24 +18,22 @@ export const digitalCampfire = {
     startDate: null,
     endDate: null,
     description: <div className="space-y-4">
+    <div>Java, 56 synchronized Android Devices, Google Assistant API, Mac Mini, LEDs, and more</div>
     <div>
     The Google Digital Campfire is an interactive art-object designed to evoke the
     feeling of sharing stories with friends around a glowing fire. Today, Google hosts
     conversations with their clients around Digital Campfires in multiple cities
     around the world.
 
-    Each Campfire uses 56 synchronized Android devices, thousands of LED&apos;s, and a
-    variety of supporting components to create a highly polished, interactive system.
-    
-    The design encourages users to gather around and engage with the Campfire from all sides.
     It can be controlled with simple voice commands like “show me images of Pittsburgh”
     or “let&apos;s get back to work”. These commands seamlessly transition the Campfire
-    through various states while the client is presenting. Choreographed modes allow the
-    Campfire to be the focus of attention, or to recede quietly to crackling embers in the
-    background as needed. Any interactions light up LEDs throughout the structure to simulate
-    the welcoming warmth of a fire, or to display changes in state. The custom software
-    suite allows video playback mapped across all devices, image searches, and animations
-    - all synced within milliseconds.
+    through various states while the client is presenting.
+    </div>
+    <div>
+    Some of the main technical challenges were synchronizing video feeds on 56 Android
+    devices, creating a custom voice interface with Google Assistant, creating
+    choreographed animations, distributing image search results across devices,
+    and creating a custom software suite to control the entire system.
     </div>
     <div><a href="https://iontank.com/projects/campfire" target="_blank">See videos and photos</a></div>
     </div>,
