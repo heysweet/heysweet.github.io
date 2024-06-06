@@ -84,7 +84,7 @@ export default function DropdownButton({
               {option.startDate && <span className='pl-4 flex-0 truncate text-right'>{formatDateDuration(option.startDate, option.endDate)}</span>}
           </Link>
         </span>;
-      })}
+      })}      
       <div aria-hidden={true} className='bg-black text-green'>{selectedOption?.preview}</div>
     </div>}
   </>);

@@ -7,8 +7,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        green: '#dcf29d',
-        black: '#1b1233',
+        green: 'var(--primary-color)',
+        black: 'var(--secondary-color)',
       },
     },
     keyframes: {

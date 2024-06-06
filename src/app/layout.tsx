@@ -48,6 +48,7 @@ export default function RootLayout({
           </VirtualWindow>
         </main>
         <div className="motion-reduce:hidden animate-flicker inset-0 z-10 scanlines absolute pointer-events-none" />
+        <div className="vignette pointer-events-none" />
       </body>
     </html>
   );
