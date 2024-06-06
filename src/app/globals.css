@@ -110,7 +110,6 @@
   }
 
   .scanlines::after {
-    animation: flicker 10s infinite;
     pointer-events: none;
     content: " ";
     position: absolute;

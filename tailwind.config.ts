@@ -12,21 +12,11 @@ const config: Config = {
       },
     },
     keyframes: {
-      flicker : {
-        '0%, 45%, 90%': { opacity: '0.6' },
-        '5%, 20%, 30%, 50%, 75%, 95%': { opacity: '0.5' },
-        '10%, 25%, 55%, 65%, 85%': { opacity: '0.525' },
-        '15%, 35%, 60%, 70%, 100%': { opacity: '0.45' },
-        '40%, 80%': { opacity: '0.5' },
-      },
       slowFlicker: {
         '10%, 10.225%, 10.45%': { opacity: '1.0' },
         '10.025%, 10.15%, 10.375%': { opacity: '0.9' },
         '10.05%, 10.257%, 10.325%': { opacity: '0.85' },
         '10.075%, 10.2%, 10.35%': { opacity: '0.875' },
-        '10.1%, 10.025%': { opacity: '0.95' },
-        '10.175%, 10.3%, 10.5%': { opacity: '0.95' },
-        '10.51%': { opacity: '1.0' },
       },
       chromaticAberrationHover: {
         '0%': {
@@ -204,9 +194,8 @@ const config: Config = {
     },
     animation: {
       'fade-in': 'fadeIn 3s forwards',
-      'flicker': 'flicker 0.25s infinite',
-      'slow-flicker': 'slowFlicker 10s infinite',
-      'chroma': 'chromaticAberration 3.5s infinite',
+      'slowFlicker': 'slowFlicker 10s infinite',
+      'chroma': '',//'chromaticAberration 3.5s infinite',
       'chroma-lg': 'chromaticAberrationHover 3.5s infinite',
       'img-load': 'imageLoad 0.24s linear forwards',
     }
