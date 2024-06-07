@@ -28,6 +28,8 @@ export const dbtLabs = {
     <div>
     - Transformed my hackathon-winning project into dbt Explorer, a flag-ship product for dbt Labs.
     <br />
+    - On-boarded team of 4 backend engineers into Explorer, teaching React, Tailwind, and advanced TypeScript knowledge.
+    <br />
     - Built and maintained multiple npm packages, including dbt-dag (a React library for visualizing dbt resources across dbt Cloud as a Directed Acyclic Graph) and dagnabbit (a Rust library for handling selector syntax parsing and graph traversal for subgraph selection).
     </div>
     <div><a href="https://www.getdbt.com/" target='_blank'>getdbt.com</a></div>
