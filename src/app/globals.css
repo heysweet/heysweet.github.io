@@ -36,8 +36,14 @@
     @apply underline;
   }
 
-  img:not(.skip-chroma) {
-    filter: drop-shadow(-2.3px 0 1px rgba(255,0,80,0.2)) drop-shadow(2px 0 1px rgba(80,0,255,0.4));
+  a:hover img:not(.skip-chroma),
+  button:hover img:not(.skip-chroma) {
+    filter: drop-shadow(-2.3px 0 1px rgba(255,0,80,0.25)) drop-shadow(2px 0 1px rgba(80,0,255,0.45));
+  }
+
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  img.transform-black {
+    filter: brightness(0) invert(9%) sepia(26%) saturate(2113%) hue-rotate(222deg) brightness(95%) contrast(102%);
   }
 
   img.transform-green {

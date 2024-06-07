@@ -38,8 +38,8 @@ function millisToDuration(millis: number, isStillActive = false): string {
     const minutes = seconds / 60;
     const hours = minutes / 60;
     const days = hours / 24;
-    const months = days / 30;
-    const years = (months / 12).toFixed(0);
+    const months = Math.floor(days / 30);
+    const years = Math.floor(months / 12).toFixed(0);
 
     const durations: string[] = [];
 

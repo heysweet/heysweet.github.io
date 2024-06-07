@@ -4,5 +4,6 @@ import { google } from './google';
 import { iontank } from './iontank';
 import { nike } from './nike';
 import { nikeIntern } from './nikeIntern';
+import { geekAndSundry } from './geekAndSundry';
 
-export const relevantExperience: Experience[] = [dbtLabs, google, iontank, nike, nikeIntern];
+export const relevantExperience: Experience[] = [dbtLabs, google, iontank, nike, nikeIntern, geekAndSundry];
