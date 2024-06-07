@@ -50,9 +50,10 @@ export const geekAndSundry = {
     Objective-C and iOS development.
     </div>
     <div>
-        Video I edited: 
-        <br />
-        - Extended interviews with drummer <a href="https://www.youtube.com/watch?v=9bC1WoHn1zU" target='_blank'>Jason Finn</a>, NASA JPL&apos;s <a href="https://www.youtube.com/watch?v=sjZhQmdhv8w" target='_blank'>Bobak Ferdowsi</a>, and author <a href="https://www.youtube.com/watch?v=1ofRqDQGIKo" target='_blank'>John Scalzi</a>
+    I edited extended interviews with drummer
+    <a href="https://www.youtube.com/watch?v=9bC1WoHn1zU" target='_blank'>Jason Finn</a>,
+    NASA JPL&apos;s <a href="https://www.youtube.com/watch?v=sjZhQmdhv8w" target='_blank'>Bobak Ferdowsi</a>,
+    and author <a href="https://www.youtube.com/watch?v=1ofRqDQGIKo" target='_blank'>John Scalzi</a>
     </div>
     
     <div><a href="https://www.youtube.com/@GeekandSundry/videos" target='_blank'>Geek & Sundry YouTube Channel</a></div>
