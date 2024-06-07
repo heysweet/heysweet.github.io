@@ -30,7 +30,7 @@ export default function VirtualWindow({
 
   return (
     <div {...props} className={twMerge('border-green border relative h-full', props.className)} ref={containerRef} >
-        <div className='w-full absolute top-0 h-8.5 bg-green border-black border border-b-0 text-black text-2xl z-10'>
+        <div className='w-full px-1 absolute top-0 h-8.5 bg-green border-black border border-b-0 text-black text-2xl z-10'>
           <a className='px-2 bg-transparent max-[350px]:hidden inline' href="/">
             <span className='sr-only'>Home</span>
             <span aria-hidden="true">andrewmsweet.com</span>
