@@ -1,6 +1,7 @@
 import { FC, ReactNode } from "react";
 import Image from 'next/image';
 import { accessibleDateRange, formatDateRange } from "@/utils/date";
+import { twJoin } from "tailwind-merge";
 
 type ResumeProps = {
     title: string;
@@ -12,9 +13,10 @@ type ResumeProps = {
     
     description: ReactNode;
     heroImageSrc?: string;
+    tintImage?: boolean;
 }
 
-export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, externalWebsite, description, heroImageSrc }: ResumeProps) => {
+export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, externalWebsite, description, heroImageSrc, tintImage }: ResumeProps) => {
     return (
         <div className='flex flex-col space-y-4 lg:space-y-0 lg:flex-row p-4 text-lg bg-black text-green border border-green'>
             <div className="flex-1 mr-4">
@@ -30,12 +32,13 @@ export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, e
                 {externalWebsite && <a href={externalWebsite} target='_blank' rel='noreferrer'>Website</a>}
             </div>
             {heroImageSrc && 
-            <div className="flex-0">
-                <Image className="skip-chroma animate-img-load"
+            <div className="flex-0 relative">
+                <Image className={twJoin("skip-chroma animate-img-load")}
                     src={heroImageSrc}
                     width={450}
                     height={300}
-                    alt='' />
+                    alt=''></Image>
+                {tintImage && <div className="absolute inset-0 bg-black opacity-20" />}
             </div>}
         </div>
     );

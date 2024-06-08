@@ -57,4 +57,8 @@ export type Experience = {
      * A React component that renders the full page.
      */
     page?: React.ReactNode;
+    /**
+     * Tint the image green.
+     */
+    tintImage?: boolean;
 };

@@ -22,7 +22,10 @@ export const ctrlArtCritique = {
     endDate: null,
 
     description: <div>
-        <div>Let&apos;s Play Art YouTube video series asks art students play a videogame and analyze it through the lens of art criticism.</div>
+        <div>
+        Let&apos;s Play Art is a YouTube video series asks art students play a
+        videogame and analyze it through the lens of art criticism.
+        </div>
         <div>
             - <a href='https://www.youtube.com/watch?v=sSkAYI8f5W8' target='_blank'>
                 Let&apos;s Play Art - Fez
