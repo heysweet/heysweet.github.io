@@ -60,12 +60,12 @@ export default function LandingPage() {
               <div className='space-x-2 mb-4'>
                 <h2 className='sr-only'>External Links</h2>
                 <a href='https://www.linkedin.com/in/andrewmsweet/' target='_blank'>
-                  <Image src='/linkedin.png' className='inline-block mb-1 mr-1' alt='LinkedIn' width={16} height={16} />
+                  <Image role='presentation' alt='' src='/linkedin.png' className='inline-block mb-1 mr-1' />
                   LinkedIn
                   <span className='sr-only'> profile</span>
                 </a>
                 <a href='https://github.com/heysweet' target='_blank'>
-                  <Image src='/github.png' className='inline-block mb-1 mr-1' alt='GitHub' width={16} height={16} />
+                  <Image role='presentation' alt='' src='/github.png' className='inline-block mb-1 mr-1' width={16} height={16} />
                   GitHub
                   <span className='sr-only'> profile</span>
                 </a>
@@ -117,7 +117,7 @@ export default function LandingPage() {
                 <div>
                 In my free time, I enjoy making videogames -- most recently having created
                 {' '}<a href='https://itch.io/jam/miz-jam-1/rate/738711' className='whitespace-break-spaces' target='_blank'>
-                  <Image src='/bridgei.png' className='inline-block mb-1 mr-1' alt='Bridge' width={16} height={16} />
+                  <Image role='presentation' alt='' src='/bridgei.png' className='inline-block mb-1 mr-1' width={16} height={16} />
                   Bridge: The Card Game: The Video Game
                 </a> for a game jam (
                   <a href="https://www.youtube.com/watch?v=lj866DtYVlo" target='_blank'>
