@@ -33,7 +33,7 @@ export const sald = {
         <div>
         The goals of the game engine were to be to have a small footprint, 
         be easy to use, and most importantly was purpose-designed for the
-        use in game jams like Ludum Dare, where it's important to upload the full
+        use in game jams like Ludum Dare, where it&apos;s important to upload the full
         source code and assets embedded in the HTML to avoid worrying about
         additional hosting concerns.
         </div>
