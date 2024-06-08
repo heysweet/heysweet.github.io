@@ -23,23 +23,18 @@ export const ctrlArtCritique = {
 
     description: <div>
         <div>
-        Let&apos;s Play Art is a YouTube video series asks art students play a
-        videogame and analyze it through the lens of art criticism.
-        </div>
-        <div>
-            - <a href='https://www.youtube.com/watch?v=sSkAYI8f5W8' target='_blank'>
-                Let&apos;s Play Art - Fez
-            </a>
-        </div>
-        <div>
-            - <a href='https://www.youtube.com/watch?v=093lQQxFEq8' target='_blank'>
-                Let&apos;s Play Art - Amnesia
-            </a>
-        </div>
-        <div>
-            - <a href='https://www.youtube.com/watch?v=2qZKj7M6yhQ' target='_blank'>
-                Let&apos;s Play Art - Mass Effect 3
-            </a>
+        Let{"'"}s Play Art is a YouTube video series asks art students play a
+        videogame and analyze it through the lens of art criticism. Video include
+        {' '}<a href='https://www.youtube.com/watch?v=sSkAYI8f5W8' target='_blank'>
+            Fez
+        </a> and a discussion about auteur theory, and art vs the artist,
+        {' '}<a href='https://www.youtube.com/watch?v=093lQQxFEq8' target='_blank'>
+            Amnesia
+        </a> and a discussion on emotions and art, and
+        {' '}<a href='https://www.youtube.com/watch?v=2qZKj7M6yhQ' target='_blank'>
+            Mass Effect 3
+        </a> and a discussion on the role of the player in the narrative and
+        can a AAA studio make art.
         </div>
     </div>,
 

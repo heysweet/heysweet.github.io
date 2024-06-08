@@ -26,7 +26,7 @@ export const digitalCampfire = {
     around the world.
 
     It can be controlled with simple voice commands like “show me images of Pittsburgh”
-    or “let&apos;s get back to work”. These commands seamlessly transition the Campfire
+    or “let{"'"}s get back to work”. These commands seamlessly transition the Campfire
     through various states while the client is presenting.
     </div>
     <div>
