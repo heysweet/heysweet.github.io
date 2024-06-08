@@ -2,7 +2,7 @@
 
 <img alt="Preview of what the portfolio website looks like. 1-bit retro aesthetic with bright green and dark purple color palette" width="1217" alt="image" src="https://github.com/heysweet/heysweet.github.io/assets/1190438/558d82fe-60e8-43aa-85d2-54f52e327583">
 
-This website is a portfolio and blog site that I built using React, TypeScript, NextJS, and Tailwind CSS.
+[This website](https://heysweet.github.io/) is a portfolio and blog site that I built using React, TypeScript, NextJS, and Tailwind CSS.
 
 It is hosted on GitHub Pages and uses GitHub Actions for CI/CD.
 
