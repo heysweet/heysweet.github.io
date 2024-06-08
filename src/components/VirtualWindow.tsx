@@ -6,7 +6,7 @@ import DropdownButton, { DropdownButtonProps } from './DropdownButton';
 import { useResizeObserver } from 'usehooks-ts';
 
 interface ContainerProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'ref'> {
-  items?: Omit<DropdownButtonProps, 'open' | 'close'>[];
+  items?: Pick<DropdownButtonProps, 'title' | 'shortTitle' | 'options' | 'isActive' | 'className'>[];
 }
 
 export const SHORT_TITLE_MAX_WIDTH = 768;

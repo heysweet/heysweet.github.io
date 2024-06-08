@@ -40,7 +40,6 @@ export default function RootLayout({
             { title: 'Experience', shortTitle: 'EXP', options: relevantExperience },
             { title: 'Education', shortTitle: 'EDU', options: education },
             { title: 'Projects', shortTitle: 'PROJ', options: projects },
-            // { title: 'Creative-Coding', shortTitle: 'ART', options: [] },
             ]}>
             <div className='m-4'>
               {children}
