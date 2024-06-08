@@ -32,7 +32,11 @@ export const dbtLabs = {
     <br />
     - Built and maintained multiple npm packages, including dbt-dag (a React library for visualizing dbt resources across dbt Cloud as a Directed Acyclic Graph) and dagnabbit (a Rust library for handling selector syntax parsing and graph traversal for subgraph selection).
     </div>
-    <div><a href="https://www.getdbt.com/" target='_blank'>getdbt.com</a></div>
+    <div>
+        <a href="https://www.getdbt.com/" target='_blank'>
+            getdbt.com
+        </a>
+    </div>
     </div>,
 
     heroImageSrc: '/dag.png',

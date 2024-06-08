@@ -60,10 +60,12 @@ export default function LandingPage() {
               <div className='space-x-2 mb-4'>
                 <h2 className='sr-only'>External Links</h2>
                 <a href='https://www.linkedin.com/in/andrewmsweet/' target='_blank'>
+                  <Image src='/linkedin.png' className='inline-block mb-1 mr-1' alt='LinkedIn' width={16} height={16} />
                   LinkedIn
                   <span className='sr-only'> profile</span>
                 </a>
                 <a href='https://github.com/heysweet' target='_blank'>
+                  <Image src='/github.png' className='inline-block mb-1 mr-1' alt='GitHub' width={16} height={16} />
                   GitHub
                   <span className='sr-only'> profile</span>
                 </a>
@@ -94,12 +96,18 @@ export default function LandingPage() {
                 
                 I have a strong background in web apps and
                 full-stack development, and even had the opportunity to build
-                a <a target='_blank' href='https://iontank.com/projects/drumbar'>5-story cylindrical TV screen</a>.
+                a <a target='_blank' href='https://iontank.com/projects/drumbar'>
+                  <Image src='/iontank.png' className='inline-block mb-1 mr-1' alt='Iontank' width={16} height={16} />
+                  5-story cylindrical TV screen
+                </a>.
                 </div>
                 <div>
                 I am currently working as a Senior Software Engineer
                 at <a href='/experience#dbt-labs'>dbt Labs</a>, where I
-                turned a hackathon win into a flagship product: <a target='_blank' href="https://www.getdbt.com/blog/proactively-improve-your-dbt-projects-with-new-dbt-explorer-features">dbt Explorer</a>.
+                turned a hackathon win into a flagship product: <a target='_blank' href="https://www.getdbt.com/blog/proactively-improve-your-dbt-projects-with-new-dbt-explorer-features">
+                  <Image src='/dbt.png' className='inline-block mb-1 mr-1' alt='dbt Labs' width={16} height={16} />
+                  dbt Explorer
+                </a>.
                 
                 Formerly, I worked
                 at companies like <a href='/experience#google-shopping'>Google</a>,
@@ -108,8 +116,14 @@ export default function LandingPage() {
                 </div>
                 <div>
                 In my free time, I enjoy making videogames -- most recently having created
-                {' '}<a href='https://itch.io/jam/miz-jam-1/rate/738711' className='whitespace-break-spaces' target='_blank'>Bridge: The Card Game: The Video Game</a> for a game jam (
-                  <a href="https://www.youtube.com/watch?v=lj866DtYVlo" target='_blank'>Dev Vlog</a>).
+                {' '}<a href='https://itch.io/jam/miz-jam-1/rate/738711' className='whitespace-break-spaces' target='_blank'>
+                  <Image src='/bridgei.png' className='inline-block mb-1 mr-1' alt='Bridge' width={16} height={16} />
+                  Bridge: The Card Game: The Video Game
+                </a> for a game jam (
+                  <a href="https://www.youtube.com/watch?v=lj866DtYVlo" target='_blank'>
+                    <Image src='/youtube.png' className='inline-block mb-1 mr-1' alt='YouTube' width={16} height={16} />
+                    Dev Vlog
+                  </a>).
                 </div>
               </div>
           </div>
