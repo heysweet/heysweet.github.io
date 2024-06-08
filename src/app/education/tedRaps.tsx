@@ -14,7 +14,7 @@ const Page: React.FC = () => {
 
 export const tedRaps = {
     id: 'ted-raps',
-    name: 'tedRaps',
+    name: 'TEDRaps',
     title: 'Interactive Art and Computational Design Project',
     iconSrc: '/ted.png',
 
@@ -36,7 +36,7 @@ export const tedRaps = {
         </div>
         <div>
             <a href='https://www.youtube.com/watch?v=zPJrWseuB5s' target='_blank'>
-                Video
+                Watch TEDRaps
             </a>
         </div>
     </div>,

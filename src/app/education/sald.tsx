@@ -49,17 +49,14 @@ export const sald = {
         and convex polygons.
         </div>
         <div>
-        - <a href='https://www.youtube.com/watch?v=rq7mOi6WXUA' target='_blank'>
-            Making Of
+        - <a href='https://sald-devs.github.io/sald/' target='_blank'>
+            SALD Docs
         </a>
         <br />
-        - <a href='https://imgur.com/gallery/pixel-motion-2dy9jT4' target='_blank'>
-            GIF on imgur
+        - <a href='https://github.com/ixchow/sald' target='_blank'>
+            SALD on GitHub
         </a>
         <br />
-        - <a href='https://www.youtube.com/watch?v=4nw7kjSefPY' target='_blank'>
-            Video
-        </a>
         </div>
     </div>,
 

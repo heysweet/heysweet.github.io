@@ -9,10 +9,10 @@ import { sald } from './sald';
 
 export const education: Experience[] = [
     carnegieMellon,
-    ctrlArtCritique,
     pixelInMotion,
     tedRaps,
     sald,
+    coldWar,
+    ctrlArtCritique,
     walkingDead,
-    coldWar
 ];

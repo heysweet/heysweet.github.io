@@ -53,7 +53,7 @@ export const coldWar = {
         </div>
         <div>
             <a href='https://www.youtube.com/watch?v=BBQc__m56Y8' target='_blank'>
-                Video
+                Watch Technical Breakdown of Gameplay
             </a>
         </div>
     </div>,

@@ -43,17 +43,10 @@ export const pixelInMotion = {
         Made in collaboration with Sylvia Kosowski.
         </div>
         <div>
-        - <a href='https://www.youtube.com/watch?v=rq7mOi6WXUA' target='_blank'>
-            Making Of
+        <a href='https://www.youtube.com/watch?v=rq7mOi6WXUA' target='_blank'>
+            Watch Making of Video
         </a>
         <br />
-        - <a href='https://imgur.com/gallery/pixel-motion-2dy9jT4' target='_blank'>
-            GIF on imgur
-        </a>
-        <br />
-        - <a href='https://www.youtube.com/watch?v=4nw7kjSefPY' target='_blank'>
-            Video
-        </a>
         </div>
     </div>,
 

@@ -6,4 +6,10 @@ import { thisWebsite } from "./thisWebsite";
 import { fireworks } from "./fireworks";
 
 
-export const projects: Experience[] = [thisWebsite, drumbar, digitalCampfire, fireworks, bridgeTheVideoGame];
+export const projects: Experience[] = [
+    thisWebsite,
+    drumbar,
+    digitalCampfire,
+    fireworks,
+    bridgeTheVideoGame
+];

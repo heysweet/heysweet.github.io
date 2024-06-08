@@ -21,6 +21,7 @@ export const nikeIntern = {
     endDate: new Date('2014-08-31'),
 
     description: <div className='space-y-4'>
+    <div>Java, Objective-C (iOS Development)</div>
     <div>
     Consumer Account Management Automation Framework Engineering:
     <br />
