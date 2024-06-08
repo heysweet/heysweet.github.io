@@ -33,7 +33,7 @@ export const pixelInMotion = {
         </div>
         <div>
         The technique was two first algorithmically quantize the colors
-        into 8 shades of gray, and then into a 32x24 grid of pixels.
+        into eight shades of gray, and then into a 32x24 grid of pixels.
         </div>
         <div>
         I then designed software which would diff frames to identify which

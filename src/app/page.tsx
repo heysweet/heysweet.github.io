@@ -60,7 +60,7 @@ export default function LandingPage() {
               <div className='space-x-2 mb-4'>
                 <h2 className='sr-only'>External Links</h2>
                 <a href='https://www.linkedin.com/in/andrewmsweet/' target='_blank'>
-                  <Image role='presentation' alt='' src='/linkedin.png' className='inline-block mb-1 mr-1' />
+                  <Image role='presentation' alt='' src='/linkedin.png' className='inline-block mb-1 mr-1' width={16} height={16} />
                   LinkedIn
                   <span className='sr-only'> profile</span>
                 </a>
@@ -104,7 +104,7 @@ export default function LandingPage() {
                 <div>
                 I am currently working as a Senior Software Engineer
                 at <a href='/experience#dbt-labs'>dbt Labs</a>, where I
-                turned a hackathon win into a flagship product: <a target='_blank' href="https://www.getdbt.com/blog/proactively-improve-your-dbt-projects-with-new-dbt-explorer-features">
+                turned my hackathon win into a flagship product: <a target='_blank' href="https://www.getdbt.com/blog/proactively-improve-your-dbt-projects-with-new-dbt-explorer-features">
                   <Image src='/dbt.png' className='inline-block mb-1 mr-1' alt='dbt Labs' width={16} height={16} />
                   dbt Explorer
                 </a>.

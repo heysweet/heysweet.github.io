@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { twMerge } from 'tailwind-merge';
 import DropdownButton, { DropdownButtonProps } from './DropdownButton';
 import { useResizeObserver } from 'usehooks-ts';
@@ -28,17 +28,63 @@ export default function VirtualWindow({
 
   const shouldUseShortTitle = size?.width != null && size.width < SHORT_TITLE_MAX_WIDTH;
 
+  const menuItemRefs = React.useRef<(HTMLButtonElement | HTMLAnchorElement)[]>([]);
+  const [currentIndex, setCurrentIndex] = React.useState<number>(-1);
+
+  const focusNext = useCallback((diff: -1 | 1) => {
+    const options = menuItemRefs.current;
+    const nextIndex = (currentIndex + diff + options.length) % options.length;
+    options[nextIndex].focus();
+  }, [currentIndex]);
+
+  function onFocus(index: number) {
+    setCurrentIndex(index);
+  }
+
+  function onBlur() {
+    setCurrentIndex(-1);
+  }
+
+  useEffect(() => {
+    const onKeydown = (event: KeyboardEvent) => {
+      if (currentIndex === -1) return;
+      switch (event.key) {
+        case 'ArrowRight':
+          focusNext(1);
+          break;
+        case 'ArrowLeft':
+          focusNext(-1);
+          break;
+      }
+    };
+
+    document.addEventListener("keydown", onKeydown, false);
+
+    return () => {
+      document.removeEventListener("keydown", onKeydown, false);
+    }
+  }, [currentIndex, focusNext]);
+
   return (
     <div {...props} className={twMerge('border-green border relative h-full', props.className)} ref={containerRef} >
         <div className='w-full px-1 absolute top-0 h-8.5 bg-green border-black border border-b-0 text-black text-2xl z-10'>
-          <a className='px-2 bg-transparent max-[350px]:hidden inline' href="/">
+          <a 
+            className='px-2 bg-transparent max-[350px]:hidden inline'
+            href="/"
+            ref={(el) => {if (el) menuItemRefs.current[0] = el}}
+            onFocus={() => onFocus(0)}
+            onBlur={onBlur}
+          >
             <span className='sr-only'>Home</span>
             <span aria-hidden="true">andrewmsweet.com</span>
           </a>
           <div className='float-right' role='menubar'>
-            {items?.map((item)=> (
+            {items?.map((item, index)=> (
               <DropdownButton
                 {...item}
+                onFocus={() => onFocus(index + 1)}
+                onBlur={onBlur}
+                ref={(el) => {if (el) menuItemRefs.current[index + 1] = el}}
                 title={shouldUseShortTitle ? item.shortTitle : item.title}
                 className='px-1 overflow-hidden'
                 key={item.title}
