@@ -16,7 +16,7 @@ export const pixelInMotion = {
     id: 'pixel-in-motion',
     name: 'A Pixel In Motion',
     title: 'Experimental Animation',
-    iconSrc: '/ted.png',
+    iconSrc: '/horse.png',
 
     startDate: null,
     endDate: null,
