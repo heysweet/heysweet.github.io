@@ -67,9 +67,6 @@ export default function LandingPage() {
                   GitHub
                   <span className='sr-only'> profile</span>
                 </a>
-                <a href="mailto:andrewmsweet.website@gmail.com" target='_blank'>
-                  <span className='sr-only'>Write an </span>Email
-                </a>
               </div>
               <div className='h-16 overflow-hidden animate-fade-in'>
                 <h2 className='sr-only'>Skills and Technology</h2>
