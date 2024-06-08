@@ -36,6 +36,18 @@
     @apply underline;
   }
 
+  [target='_blank']::before {
+    content: '[';
+  }
+
+  [target='_blank']::after {
+    content: ']';
+  }
+
+  .sepia-green {
+    filter: sepia(1.0) hue-rotate(27deg);
+  }
+
   a:hover img:not(.skip-chroma),
   button:hover img:not(.skip-chroma) {
     filter: drop-shadow(-2.3px 0 1px rgba(255,0,80,0.25)) drop-shadow(2px 0 1px rgba(80,0,255,0.45));

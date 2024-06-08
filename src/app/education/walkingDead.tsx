@@ -32,7 +32,7 @@ export const walkingDead = {
         </div>
         <div>
             <a href='https://www.youtube.com/watch?v=lsC2RhXNWbQ' target='_blank'>
-                [Video]
+                Video
             </a>
         </div>
     </div>,

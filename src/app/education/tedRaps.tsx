@@ -36,7 +36,7 @@ export const tedRaps = {
         </div>
         <div>
             <a href='https://www.youtube.com/watch?v=zPJrWseuB5s' target='_blank'>
-                [Video]
+                Video
             </a>
         </div>
     </div>,

@@ -44,15 +44,15 @@ export const pixelInMotion = {
         </div>
         <div>
         - <a href='https://www.youtube.com/watch?v=rq7mOi6WXUA' target='_blank'>
-            [Making Of]
+            Making Of
         </a>
         <br />
         - <a href='https://imgur.com/gallery/pixel-motion-2dy9jT4' target='_blank'>
-            [GIF on imgur]
+            GIF on imgur
         </a>
         <br />
         - <a href='https://www.youtube.com/watch?v=4nw7kjSefPY' target='_blank'>
-            [Video]
+            Video
         </a>
         </div>
     </div>,

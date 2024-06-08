@@ -27,7 +27,7 @@ export const thisWebsite = {
     you may notice a few more colors for polish, like a chromatic aberration effect
     on hover, or use of opacity to achieve the scanline and flicker effects.
     </div>
-    <div><a href="https://github.com/heysweet/heysweet.github.io">View on GitHub</a></div>
+    <div><a href="https://github.com/heysweet/heysweet.github.io" target="_blank">View on GitHub</a></div>
     </div>,
     href: "/projects#this-website",
     preview: <Preview />,
