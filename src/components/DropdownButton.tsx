@@ -120,11 +120,6 @@ function DropdownOptions({ options, close }: DropdownOptionsProps) {
 export const DropdownButton = React.forwardRef<HTMLButtonElement, DropdownButtonProps>(
   ({ title, isActive, options, onFocus, onBlur, open, close, className }, ref) => {
   function onClick(e: React.MouseEvent<HTMLButtonElement>) {
-    const listener = () => {
-      window.removeEventListener('click', listener);
-      close();
-    }
-    window.addEventListener('click', listener);
     isActive ? close() : open();
     e.stopPropagation();
   }
