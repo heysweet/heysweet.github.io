@@ -9,6 +9,7 @@ import { useDebounceCallback } from 'usehooks-ts';
 import { formatDateDuration } from '@/utils/date';
 import FocusTrap from 'focus-trap-react';
 
+const FOCUS_TRAP_OPTIONS: FocusTrap.Props['focusTrapOptions'] = { allowOutsideClick: true };
 
 export interface DropdownButtonProps {
   title: string;
@@ -91,7 +92,7 @@ function DropdownOptions({ options, close }: DropdownOptionsProps) {
   }, [currentIndex, focusNext, close]);
 
   return <div className='absolute w-full top-8 left-0 border-black border-b bg-green'>
-    <FocusTrap active>
+    <FocusTrap focusTrapOptions={FOCUS_TRAP_OPTIONS}>
       <div>
         {options.map((option, index) => {
           return <span key={option.href}>

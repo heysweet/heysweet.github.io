@@ -24,6 +24,7 @@ export default function VirtualWindow({
   const [activeButton, setActiveButton] = React.useState<string|null>(null);
 
   const containerRef = React.useRef<HTMLDivElement | null>(null);
+  const menuRef = React.useRef<HTMLDivElement | null>(null);
   const size = useResizeObserver({ ref: containerRef, box: 'border-box' });
 
   const shouldUseShortTitle = size?.width != null && size.width < SHORT_TITLE_MAX_WIDTH;
@@ -58,43 +59,52 @@ export default function VirtualWindow({
       }
     };
 
+
+    function close(e: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setActiveButton(null);
+      }
+    }
+
     document.addEventListener("keydown", onKeydown, false);
+    document.addEventListener("click", close, false);
 
     return () => {
       document.removeEventListener("keydown", onKeydown, false);
+      document.removeEventListener("click", close, false);
     }
   }, [currentIndex, focusNext]);
 
   return (
     <div {...props} className={twMerge('border-green border relative h-full', props.className)} ref={containerRef} >
-        <div className='w-full px-1 absolute top-0 h-8.5 bg-green border-black border border-b-0 text-black text-2xl z-10'>
-          <a 
-            className='px-2 bg-transparent max-[350px]:hidden inline'
-            href="/"
-            ref={(el) => {if (el) menuItemRefs.current[0] = el}}
-            onFocus={() => onFocus(0)}
-            onBlur={onBlur}
-          >
-            <span className='sr-only'>Home</span>
-            <span aria-hidden="true">andrewmsweet.com</span>
-          </a>
-          <div className='float-right' role='menubar'>
-            {items?.map((item, index)=> (
-              <DropdownButton
-                {...item}
-                onFocus={() => onFocus(index + 1)}
-                onBlur={onBlur}
-                ref={(el) => {if (el) menuItemRefs.current[index + 1] = el}}
-                title={shouldUseShortTitle ? item.shortTitle : item.title}
-                className='px-1 overflow-hidden'
-                key={item.title}
-                isActive={activeButton == null ? undefined : activeButton === item.title}
-                open={() => setActiveButton(item.title)}
-                close={() => setActiveButton(null)} />
-            ))}
-          </div>
+      <div className='w-full px-1 absolute top-0 h-8.5 bg-green border-black border border-b-0 text-black text-2xl z-10' ref={menuRef}>
+        <a 
+          className='px-2 bg-transparent max-[350px]:hidden inline'
+          href="/"
+          ref={(el) => {if (el) menuItemRefs.current[0] = el}}
+          onFocus={() => onFocus(0)}
+          onBlur={onBlur}
+        >
+          <span className='sr-only'>Home</span>
+          <span aria-hidden="true">andrewmsweet.com</span>
+        </a>
+        <div className='float-right' role='menubar'>
+          {items?.map((item, index)=> (
+            <DropdownButton
+              {...item}
+              onFocus={() => onFocus(index + 1)}
+              onBlur={onBlur}
+              ref={(el) => {if (el) menuItemRefs.current[index + 1] = el}}
+              title={shouldUseShortTitle ? item.shortTitle : item.title}
+              className='px-1 overflow-hidden'
+              key={item.title}
+              isActive={activeButton == null ? undefined : activeButton === item.title}
+              open={() => setActiveButton(item.title)}
+              close={() => setActiveButton(null)} />
+          ))}
         </div>
-        <div className='w-full h-full overflow-y-auto overflow-x-hidden py-8'>{children}</div>
+      </div>
+      <div className='w-full h-full overflow-y-auto overflow-x-hidden py-8'>{children}</div>
     </div>
   );
 }
