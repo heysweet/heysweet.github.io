@@ -58,6 +58,7 @@
     filter: brightness(0) invert(9%) sepia(26%) saturate(2113%) hue-rotate(222deg) brightness(95%) contrast(102%);
   }
 
+  a:focus img, button:focus img,
   img.transform-green {
     filter: brightness(0) saturate(100%) invert(96%) sepia(7%) saturate(1632%) hue-rotate(19deg) brightness(92%) contrast(109%);
   }
