@@ -5,6 +5,7 @@ import { iontank } from './iontank';
 import { nike } from './nike';
 import { nikeIntern } from './nikeIntern';
 import { geekAndSundry } from './geekAndSundry';
+import { ios } from './ios';
 
 export const relevantExperience: Experience[] = [
     dbtLabs,
@@ -12,5 +13,6 @@ export const relevantExperience: Experience[] = [
     iontank,
     nike,
     nikeIntern,
-    geekAndSundry
+    geekAndSundry,
+    ios,
 ];

@@ -42,7 +42,7 @@ export const nikeIntern = {
     - Coordinated with Nike leadership in Events Services, Legal, Internal
     Communications for design and implementation forecasting
     <br />
-    - Presented concept in front of a large audience of Nike leadership and peers
+    - Presented demo in front of a large audience of Nike leadership and peers
     </div>
     <div><a href='https://jobs.nike.com/internships' target='_blank'>Nike Internship Program</a></div>
     </div>,
