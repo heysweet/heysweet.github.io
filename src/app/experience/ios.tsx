@@ -27,7 +27,7 @@ export const ios = {
     events.
     </div>
     <div>
-    After this experience, my friends and I developed an iOS app called Let{"'"}s,
+    After this experience, my friends and I developed an iOS app called <a href="https://www.youtube.com/watch?v=LWsa4tpQsZM" target="_blank">Let{"'"}s</a>,
     which was a messaging app for planning light-weight events. As the sole iOS
     developer, I worked closely with a designer and a backend developer to bring
     this project to fruition while completing my undergraduate studies.
