@@ -43,7 +43,10 @@ export const ios = {
     Finally, while working full-time at Nike, I was working on the Unified Login and
     Registration team, and was responsible for providing the iOS SDK for the
     all iOS apps at Nike. Swift had just been released, and I helped kick
-    off the transition of the iOS SDK from Objective-C to Swift.
+    off the transition of the iOS SDK from Objective-C to Swift. As the engineer on
+    my team with the most iOS experience, I took an active leadership role on
+    decision making within our iOS app. Developed iOS features such as login
+    continuity and keychain management.
     </div>
     </div>,
     href: "/experience#ios",

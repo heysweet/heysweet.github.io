@@ -22,7 +22,7 @@ export const nike = {
 
     description: <div className='space-y-4'>
     <div>
-    JavaScript, Objective-C (iOS), Java (Android), and Node.js.
+    JavaScript, Objective-C, Swift, Java (Android), and Node.js.
     </div>
 
     <div>
@@ -30,9 +30,9 @@ export const nike = {
     <br />
     - Developed Automated Build & Test framework with Continuous Delivery to production with high availability
     <br />
-    - Supported onboarding integration with our APIs with nike.com
+    - Took active leadership role in decision making within iOS app development
     <br />
-    - Built app-to-web url authentication, web session management, and login continuity support for native and web experiences
+    - Built app-to-web url authentication, web session management with keychain, and login continuity support for native and web experiences
     <br />
     - Followed Test Driven Development and other agile practices within a certified scrum team
     </div>

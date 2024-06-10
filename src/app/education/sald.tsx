@@ -43,10 +43,9 @@ export const sald = {
         </div>
         <div>
         The core features of the game engine include sprite and tilemap rendering,
-        collision checking, keyboard and mouse input, music and sound effect queuing
-        and debouncing, and storing images and other game files through static data
-        urls. The GIF demonstrates collisions available for rays, circles, rectangles,
-        and convex polygons.
+        collision checking, keyboard and mouse input, music and sound effect 
+        queueing, storing images and other game files through static data urls,
+        and more.
         </div>
         <div>
         - <a href='https://sald-devs.github.io/sald/' target='_blank'>

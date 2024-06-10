@@ -26,7 +26,8 @@ export const dbtLabs = {
     </div>
 
     <div>
-    - Transformed my hackathon-winning project into dbt Explorer, a flag-ship product for dbt Labs.
+    - Transformed my hackathon-winning project into <a href="https://www.getdbt.com/blog/proactively-improve-your-dbt-projects-with-new-dbt-explorer-features" target='_blank'>dbt Explorer</a>,
+    a flag-ship product for dbt Labs.
     <br />
     - On-boarded team of 4 backend engineers into Explorer, teaching React, Tailwind, and advanced TypeScript knowledge.
     <br />
