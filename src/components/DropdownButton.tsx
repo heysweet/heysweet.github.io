@@ -35,10 +35,9 @@ type DropdownOptionsProps = {
 
 function DropdownOptions({ options, close }: DropdownOptionsProps) {
   const [hovered, setHovered] = React.useState<string | null>(null);
-  const [focused, setFocused] = React.useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = React.useState<number>(0);
 
-  const activeOption = hovered || focused;
+  const activeOption = hovered;
   const selectedOption = options.find((option) => option.href === activeOption);
 
   const onHover = useDebounceCallback((id?: string) => {
@@ -46,13 +45,7 @@ function DropdownOptions({ options, close }: DropdownOptionsProps) {
   }, DEBOUNCE_MILLIS);
 
   const onFocus = useDebounceCallback((id: string) => {
-    setHovered(id);
-    setFocused(id);
     setCurrentIndex(options.findIndex((option) => option.href === id));
-  }, DEBOUNCE_MILLIS);
-
-  const onBlur = useDebounceCallback(() => {
-    setFocused(null);
   }, DEBOUNCE_MILLIS);
 
   const linkRefs = React.useRef<HTMLAnchorElement[]>([]);
@@ -103,7 +96,6 @@ function DropdownOptions({ options, close }: DropdownOptionsProps) {
               target={option.href.startsWith('/') ? undefined : '_blank'}
               onFocus={() => onFocus(option.href)}
               onMouseOver={() => onHover(option.href)}
-              onBlur={onBlur}
               onMouseOut={() => onHover()}>
                 {option.iconSrc && <Image className='inline-block mr-2' src={option.iconSrc} alt="Brand logo" width={16} height={16}/>}
                 <span className='flex-1 truncate'>{option.name}</span>

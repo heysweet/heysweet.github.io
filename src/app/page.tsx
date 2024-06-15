@@ -89,12 +89,12 @@ export default function LandingPage() {
         </div>
       </div>
       <div className='flex-1'>
-        <div className='text-green my-4 space-y-2 text-2xl'>
+        <div className='text-green my-4 space-y-3 text-2xl'>
           <h2 className='sr-only'>About Me</h2>
           <div>
-          I enjoy solving hard technical problems, and I have a passion
-          for creating polished, accessible, and performant user
-          experiences.
+          I am a product-focused software engineer with a passion for
+          polished, accessible, and performant user experiences and a full
+          stack skillset.
           
           I have a degree
           in <a href='/education#cmu'>Computer Science and Art from Carnegie Mellon University</a>,
@@ -102,7 +102,7 @@ export default function LandingPage() {
           
           I have a strong background in web apps and
           full-stack development, and even had the opportunity to build
-          a <a target='_blank' href='https://iontank.com/projects/drumbar'>
+          a <a target='_blank' href='https://iontank.com/projects/drumbar' className='whitespace-pre'>
             <Image src='/iontank.png' className='inline-block mb-1 mr-1' alt='Iontank' width={16} height={16} />
             5-story cylindrical TV screen
           </a>.
