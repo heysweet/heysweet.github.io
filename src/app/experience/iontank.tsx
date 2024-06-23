@@ -34,7 +34,7 @@ export const iontank = {
     <br />
     - Implemented remote project tracking and an up-to-the-minute notification system for permanent on-site installations.
     <br />
-    - Designed an interactive 3D LED grid firework simulation for a temporary installation for OREO.
+    - Designed an <a href="/projects#fireworks">interactive 3D LED grid firework simulation</a> for a temporary installation for OREO.
     <br />
     </div>
     <div>
