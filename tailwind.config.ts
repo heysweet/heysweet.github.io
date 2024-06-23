@@ -10,6 +10,9 @@ const config: Config = {
         green: 'var(--primary-color)',
         black: 'var(--secondary-color)',
       },
+      screens: {
+        'big-screen': { 'raw': '((min-height: 470px) and (min-width: 768px))' },
+      }
     },
     keyframes: {
       slowFlicker: {

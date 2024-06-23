@@ -35,7 +35,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <body className={`${vt323Font.className} animate-chroma bg-black`}>
-        <main className="h-[calc(100dvh)] overflow-hidden flex flex-col items-center p-4 sm:p-10 mono bg-green text-green checkerboard-lg border border-black">
+        <main className="h-[calc(100dvh)] overflow-hidden flex flex-col items-center p-4 big-screen:p-10 mono bg-green text-green checkerboard-lg border border-black">
           <VirtualWindow title='System' className='border-black border-2 w-full max-w-6xl bg-black' items={[
             { title: 'Experience', shortTitle: 'EXP', options: relevantExperience },
             { title: 'Education', shortTitle: 'EDU', options: education },

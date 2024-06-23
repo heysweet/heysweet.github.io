@@ -43,7 +43,7 @@ const technologies = [
 
 export default function LandingPage() {
   return (
-    <div className='md:mx-16 md:my-16'>
+    <div className='md:mx-16 big-screen:my-16'>
       <div className='flex flex-col md:flex-row'>
         <div className='flex-0 flex flex-col md:flex-row'>
           <div className='my-auto flex-0 mr-4'>
