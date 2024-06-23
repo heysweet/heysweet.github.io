@@ -71,13 +71,13 @@
   a:hover, button:hover,
   a:focus, button:focus,
   a:active, button:active {
+    @apply text-green;
     @apply animate-chroma-lg;
     @apply checkerboard;
     @apply outline-none;
   }
 
   a:focus, button:focus {
-    @apply text-green;
     @apply ring-2;
     @apply ring-green;
     @apply ring-offset-2;
