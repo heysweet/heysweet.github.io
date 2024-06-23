@@ -48,17 +48,13 @@
     filter: sepia(1.0) hue-rotate(27deg);
   }
 
-  a:hover img:not(.skip-chroma),
-  button:hover img:not(.skip-chroma) {
-    filter: drop-shadow(-2.3px 0 1px rgba(255,0,80,0.25)) drop-shadow(2px 0 1px rgba(80,0,255,0.45));
-  }
-
   /* https://codepen.io/sosuke/pen/Pjoqqp */
   img.transform-black {
     filter: brightness(0) invert(9%) sepia(26%) saturate(2113%) hue-rotate(222deg) brightness(95%) contrast(102%);
   }
 
   a:focus img, button:focus img,
+  a:hover img, button:hover img,
   img.transform-green {
     filter: brightness(0) saturate(100%) invert(96%) sepia(7%) saturate(1632%) hue-rotate(19deg) brightness(92%) contrast(109%);
   }
