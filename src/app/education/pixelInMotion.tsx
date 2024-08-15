@@ -32,8 +32,8 @@ export const pixelInMotion = {
         in a stop-motion-capture of the 3D-printed material of tomorrow.
         </div>
         <div>
-        The technique was two first algorithmically quantize the colors
-        into eight shades of gray, and then into a 32x24 grid of pixels.
+        The technique was to first take a mean of the pixels into a 32x24
+        grid, followed by quantizing the colors into eight shades of gray.
         </div>
         <div>
         I then designed software which would diff frames to identify which
