@@ -56,7 +56,7 @@ export default function LandingPage() {
                 width={256} />
           </div>
           <div className='flex-1 my-auto'>
-            <h1 className='text-5xl whitespace-nowrap'>Andrew Sweet</h1>
+            <h1 className='text-5xl whitespace-nowrap'>Andrew Sweet (@heysweet)</h1>
             <div className='text-2xl mt-2'>
               <h2 className='sr-only'>External Links</h2>
               <div className='space-x-2 mb-4'>
