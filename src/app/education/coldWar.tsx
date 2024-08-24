@@ -5,13 +5,6 @@ const Preview: React.FC = () => {
     return (<Resume {...coldWar} />)
 };
 
-const Page: React.FC = () => {
-    return (<>
-        <Preview />
-        <div>Full Page</div>
-    </>)
-};
-
 export const coldWar = {
     id: 'cold-war',
     name: 'Cold War (with art assets from Red Alert 2)',
@@ -59,6 +52,5 @@ export const coldWar = {
     </div>,
 
     preview: <Preview />,
-    page: <Page />,
     href: '/education#cold-war'
 } satisfies Experience;

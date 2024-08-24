@@ -5,13 +5,6 @@ const Preview: React.FC = () => {
     return (<Resume {...sald} />)
 };
 
-const Page: React.FC = () => {
-    return (<>
-        <Preview />
-        <div>Full Page</div>
-    </>)
-};
-
 export const sald = {
     id: 'sald',
     name: 'Studio A Ludum Dare (SALD) Game Engine',
@@ -60,6 +53,5 @@ export const sald = {
     </div>,
 
     preview: <Preview />,
-    page: <Page />,
     href: '/education#sald'
 } satisfies Experience;

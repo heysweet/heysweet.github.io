@@ -5,20 +5,13 @@ const Preview: React.FC = () => {
     return (<Resume {...dbtLabs} />)
 };
 
-const Page: React.FC = () => {
-    return (<>
-        <Preview />
-        <div>Full Page</div>
-    </>)
-};
-
 export const dbtLabs = {
     id: 'dbt-labs',
     name: 'dbt Labs',
     title: 'Senior Software Engineer',
 
     startDate: new Date('2021-04-01'),
-    endDate: null, // Still work here
+    endDate:new Date('2024-08-30'),
 
     description: <div className='space-y-4'>
     <div>
@@ -43,6 +36,5 @@ export const dbtLabs = {
     heroImageSrc: '/dag.png',
     iconSrc: '/dbt.png',
     preview: <Preview />,
-    page: <Page />,
     href: '/experience#dbt-labs'
 } satisfies Experience;

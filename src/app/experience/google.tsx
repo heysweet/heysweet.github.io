@@ -5,13 +5,6 @@ const Preview: React.FC = () => {
     return (<Resume {...google} />)
 };
 
-const Page: React.FC = () => {
-    return (<>
-        <Preview />
-        <div>Full Page</div>
-    </>)
-};
-
 export const google = {
     id: 'google-shopping',
     name: 'Google Shopping',
@@ -42,6 +35,5 @@ export const google = {
 
     iconSrc: '/google.png',
     preview: <Preview />,
-    page: <Page />,
     href: '/experience#google-shopping'
 } satisfies Experience;

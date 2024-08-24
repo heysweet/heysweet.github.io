@@ -5,13 +5,6 @@ const Preview: React.FC = () => {
     return (<Resume {...walkingDead} />)
 };
 
-const Page: React.FC = () => {
-    return (<>
-        <Preview />
-        <div>Full Page</div>
-    </>)
-};
-
 export const walkingDead = {
     id: 'walking-dead',
     name: 'Walking Dead Transmedia Narrative Analysis',
@@ -38,6 +31,5 @@ export const walkingDead = {
     </div>,
 
     preview: <Preview />,
-    page: <Page />,
     href: '/education#walking-dead'
 } satisfies Experience;

@@ -5,13 +5,6 @@ const Preview: React.FC = () => {
     return (<Resume {...ctrlArtCritique} />)
 };
 
-const Page: React.FC = () => {
-    return (<>
-        <Preview />
-        <div>Full Page</div>
-    </>)
-};
-
 export const ctrlArtCritique = {
     id: 'ctrl-art-critique',
     name: 'ctrl+art+critique',
@@ -39,6 +32,5 @@ export const ctrlArtCritique = {
     </div>,
 
     preview: <Preview />,
-    page: <Page />,
     href: '/education#ctrl-art-critique'
 } satisfies Experience;

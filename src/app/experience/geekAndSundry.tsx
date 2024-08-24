@@ -5,13 +5,6 @@ const Preview: React.FC = () => {
     return (<Resume {...geekAndSundry} />)
 };
 
-const Page: React.FC = () => {
-    return (<>
-        <Preview />
-        Full Page
-    </>)
-};
-
 export const geekAndSundry = {
     id: 'geek-and-sundry',
     name: 'Geek & Sundry (Intern)',
@@ -61,6 +54,5 @@ export const geekAndSundry = {
 
     iconSrc: '/geek_and_sundry.png',
     preview: <Preview />,
-    page: <Page />,
     href: '/experience#geek-and-sundry'
 } satisfies Experience;

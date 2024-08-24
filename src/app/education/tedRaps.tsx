@@ -5,13 +5,6 @@ const Preview: React.FC = () => {
     return (<Resume {...tedRaps} />)
 };
 
-const Page: React.FC = () => {
-    return (<>
-        <Preview />
-        <div>Full Page</div>
-    </>)
-};
-
 export const tedRaps = {
     id: 'ted-raps',
     name: 'TEDRaps',
@@ -42,6 +35,5 @@ export const tedRaps = {
     </div>,
 
     preview: <Preview />,
-    page: <Page />,
     href: '/education#ted-raps'
 } satisfies Experience;

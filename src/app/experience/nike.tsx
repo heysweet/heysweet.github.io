@@ -5,13 +5,6 @@ const Preview: React.FC = () => {
     return (<Resume {...nike} />)
 };
 
-const Page: React.FC = () => {
-    return (<>
-        <Preview />
-        <div>Full Page</div>
-    </>)
-};
-
 export const nike = {
     id: 'nike',
     name: 'Nike',
@@ -41,6 +34,5 @@ export const nike = {
 
     iconSrc: '/nike.png',
     preview: <Preview />,
-    page: <Page />,
     href: '/experience#nike'
 } satisfies Experience;

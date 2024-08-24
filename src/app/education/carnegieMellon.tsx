@@ -5,13 +5,6 @@ const Preview: React.FC = () => {
     return (<Resume {...carnegieMellon} />)
 };
 
-const Page: React.FC = () => {
-    return (<>
-        <Preview />
-        <div>Full Page</div>
-    </>)
-};
-
 export const carnegieMellon = {
     id: 'cmu',
     name: 'Carnegie Mellon University',
@@ -33,6 +26,5 @@ export const carnegieMellon = {
 
     iconSrc: '/cmu.png',
     preview: <Preview />,
-    page: <Page />,
     href: '/education#cmu'
 } satisfies Experience;

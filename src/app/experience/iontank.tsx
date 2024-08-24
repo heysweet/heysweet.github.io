@@ -5,13 +5,6 @@ const Preview: React.FC = () => {
     return (<Resume {...iontank} />)
 };
 
-const Page: React.FC = () => {
-    return (<>
-        <Preview />
-        <div>Full Page</div>
-    </>)
-};
-
 export const iontank = {
     id: 'iontank',
     name: 'Iontank',
@@ -44,6 +37,5 @@ export const iontank = {
 
     iconSrc: '/iontank.png',
     preview: <Preview />,
-    page: <Page />,
     href: '/experience#iontank',
 } satisfies Experience;

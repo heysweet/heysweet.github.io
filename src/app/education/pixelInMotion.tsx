@@ -5,13 +5,6 @@ const Preview: React.FC = () => {
     return (<Resume {...pixelInMotion} />)
 };
 
-const Page: React.FC = () => {
-    return (<>
-        <Preview />
-        <div>Full Page</div>
-    </>)
-};
-
 export const pixelInMotion = {
     id: 'pixel-in-motion',
     name: 'A Pixel In Motion',
@@ -51,6 +44,5 @@ export const pixelInMotion = {
     </div>,
 
     preview: <Preview />,
-    page: <Page />,
     href: '/education#pixel-in-motion'
 } satisfies Experience;
