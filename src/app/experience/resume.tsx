@@ -1,7 +1,9 @@
+'use client'
 import { FC, ReactNode } from "react";
 import Image from 'next/image';
 import { accessibleDateRange, formatDateRange } from "@/utils/date";
 import { twJoin } from "tailwind-merge";
+import { ImageProps, useOpenImageOverlay } from "@/components/ImageOverlay";
 
 type ResumeProps = {
     title: string;
@@ -17,6 +19,12 @@ type ResumeProps = {
 }
 
 export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, externalWebsite, description, heroImageSrc, tintImage }: ResumeProps) => {
+    const openImage = useOpenImageOverlay();
+
+    const heroImage: ImageProps = {
+        src: heroImageSrc!,
+        alt: 'dbt Labs',
+    };
     return (
         <div className='flex flex-col space-y-4 lg:space-y-0 lg:flex-row p-4 text-lg bg-black text-green border border-green'>
             <div className="flex-1 mr-4">
@@ -34,10 +42,11 @@ export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, e
             {heroImageSrc && 
             <div className="flex-0 relative">
                 <Image className={twJoin("skip-chroma animate-img-load", tintImage && 'sepia-green')}
-                    src={heroImageSrc}
+                    {...heroImage}
+                    alt={heroImage.alt}
                     width={450}
                     height={300}
-                    alt=''></Image>
+                    onClick={() => openImage(heroImage)} />
                 {tintImage && <div className="absolute inset-0 bg-black opacity-20 pointer-events-none" />}
             </div>}
         </div>

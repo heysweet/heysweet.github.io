@@ -7,6 +7,7 @@ import Head from "next/head";
 
 import { VT323 } from 'next/font/google';
 import { projects } from "./projects";
+import { ImageOverlay } from "@/components/ImageOverlay";
 
 export const vt323Font = VT323({
   weight: '400',
@@ -36,14 +37,12 @@ export default function RootLayout({
       </Head>
       <body className={`${vt323Font.className} animate-chroma bg-black`}>
         <main className="h-[calc(100dvh)] overflow-hidden flex flex-col items-center p-4 big-screen:p-10 mono bg-green text-green checkerboard-lg border border-black">
-          <VirtualWindow title='System' className='border-black border-2 w-full max-w-6xl bg-black' items={[
+          <VirtualWindow title='System' className='border-black border-2 w-full max-w-6xl bg-black relative' items={[
             { title: 'Experience', shortTitle: 'EXP', options: relevantExperience },
             { title: 'Education', shortTitle: 'EDU', options: education },
             { title: 'Projects', shortTitle: 'PROJ', options: projects },
             ]}>
-            <div className='m-4'>
-              {children}
-            </div>
+              <ImageOverlay>{children}</ImageOverlay>
           </VirtualWindow>
         </main>
         <div className="motion-reduce:hidden animate-flicker inset-0 z-10 scanlines absolute pointer-events-none" />
