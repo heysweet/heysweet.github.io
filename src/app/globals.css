@@ -21,12 +21,12 @@
     z-index: 2;
 }
 
-  ::selection {
+  ::selection:not(.img) {
     @apply bg-green;
     @apply text-black;
   }
 
-  a, button {
+  a, button:not(.img) {
     @apply text-black;
     @apply animate-chroma;
     @apply bg-green;
@@ -53,8 +53,8 @@
     filter: brightness(0) invert(9%) sepia(26%) saturate(2113%) hue-rotate(222deg) brightness(95%) contrast(102%);
   }
 
-  a:focus img, button:focus img,
-  a:hover img, button:hover img,
+  a:focus img, button:focus:not(.img) img,
+  a:hover img, button:hover:not(.img) img,
   img.transform-green {
     filter: brightness(0) saturate(100%) invert(96%) sepia(7%) saturate(1632%) hue-rotate(19deg) brightness(92%) contrast(109%);
   }
@@ -64,9 +64,9 @@
     image-rendering: pixelated;
   }
 
-  a:hover, button:hover,
-  a:focus, button:focus,
-  a:active, button:active {
+  a:hover, button:hover:not(.img),
+  a:focus, button:focus:not(.img),
+  a:active, button:active:not(.img) {
     @apply text-green;
     @apply animate-chroma-lg;
     @apply checkerboard;
@@ -74,6 +74,7 @@
   }
 
   a:focus, button:focus {
+    @apply outline-none;
     @apply ring-2;
     @apply ring-green;
     @apply ring-offset-2;

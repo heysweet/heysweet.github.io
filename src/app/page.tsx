@@ -90,15 +90,16 @@ export default function LandingPage() {
       <div className='flex flex-col md:flex-row'>
         <div className='flex-0 flex flex-col md:flex-row'>
           <div className='my-auto flex-0 mr-4'>
-            <Image
-                className='skip-chroma animate-img-load'
-                src="/256.png"
-                alt="Picture of Andrew Sweet"
-                priority 
-                height={256}
-                width={256}
-                onClick={() => openImage({ src: '/256.png', alt: 'Andrew Sweet' })}
-                />
+            <button className='img' onClick={() => openImage({ src: '/256.png', alt: 'Andrew Sweet' })}>
+              <Image
+                  className='skip-chroma animate-img-load'
+                  src="/256.png"
+                  alt="Picture of Andrew Sweet"
+                  priority 
+                  height={256}
+                  width={256}
+                  />
+              </button>
           </div>
           <div className='flex-1 my-auto'>
             <h1 className='text-5xl whitespace-nowrap'>Andrew Sweet <span className='block'>@heysweet</span></h1>

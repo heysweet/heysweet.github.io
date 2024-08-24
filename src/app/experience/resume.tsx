@@ -41,12 +41,13 @@ export const Resume: FC<ResumeProps> = ({ title: jobTitle, startDate, endDate, e
             </div>
             {heroImageSrc && 
             <div className="flex-0 relative">
-                <Image className={twJoin("skip-chroma animate-img-load", tintImage && 'sepia-green')}
-                    {...heroImage}
-                    alt={heroImage.alt}
-                    width={450}
-                    height={300}
-                    onClick={() => openImage(heroImage)} />
+                <button className="img" onClick={() => openImage(heroImage)}>
+                    <Image className={twJoin("skip-chroma animate-img-load", tintImage && 'sepia-green')}
+                        {...heroImage}
+                        alt={heroImage.alt}
+                        width={450}
+                        height={300}/>
+                </button>
                 {tintImage && <div className="absolute inset-0 bg-black opacity-20 pointer-events-none" />}
             </div>}
         </div>
