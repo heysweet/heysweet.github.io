@@ -45,44 +45,38 @@ const technologies = [
 function CurrentWork() {
   const worksAtWarp = startedAtWarp();
 
-  if (!worksAtWarp) {
-    return (
-      <div>
-      I am currently working as a Senior Software Engineer
-      at <a href='/experience#dbt-labs'>dbt Labs</a>, where I
-      turned my hackathon win into a flagship product: <a target='_blank' href="https://www.getdbt.com/blog/proactively-improve-your-dbt-projects-with-new-dbt-explorer-features">
-        <Image src='/dbt.png' className='inline-block mb-1 mr-1' alt='dbt Labs' width={16} height={16} />
-        dbt Explorer
-      </a>.
-      
-      Formerly, I worked
-      at companies like <a href='/experience#google-shopping'>Google</a>,
-      {' '}<a href='/experience#nike'>Nike</a>, and
-      {' '}<a href='/experience#iontank'>Iontank</a>.
-      </div>
-    );
-  }
+  const recentHistory = (<>
+    on the core team at {worksAtWarp ? <a href='/experience#warp'>Warp</a> : 'Warp'}, where I will be building out
+      the core functionality of the <a href='https://www.warp.dev/' target='_blank'>
+        <Image src='/warp.png' className='inline-block mb-1 mr-1' alt='Warp' width={16} height={16} />
+        Warp Terminal</a>.
 
-  return (
-    <div>
-    I am currently working as a Software Engineer
-    on the core team at <a href='/experience#warp'>Warp</a>, where I will be building out
-    the core functionality of the <a href='https://www.warp.dev/' target='_blank'>
-      <Image src='/warp.png' className='inline-block mb-1 mr-1' alt='Warp' width={16} height={16} />
-      Warp Terminal
-    </a>.
-    
     Most recently, I was a Senior Software Engineer
       at <a href='/experience#dbt-labs'>dbt Labs</a>, where I
       turned my hackathon win into a flagship product: <a target='_blank' href="https://www.getdbt.com/blog/proactively-improve-your-dbt-projects-with-new-dbt-explorer-features">
         <Image src='/dbt.png' className='inline-block mb-1 mr-1' alt='dbt Labs' width={16} height={16} />
         dbt Explorer
       </a>.
-
-    Before that, I worked
+    
+    Formerly, I worked
     at companies like <a href='/experience#google-shopping'>Google</a>,
     {' '}<a href='/experience#nike'>Nike</a>, and
     {' '}<a href='/experience#iontank'>Iontank</a>.
+  </>);
+
+  if (!worksAtWarp) {
+    return (
+      <div>
+      Soon, I will be working as a Software Engineer{' '}
+      {recentHistory}
+      </div>
+    );
+  }
+
+  return (
+    <div>
+    I am currently working as a Software Engineer{' '}
+    {recentHistory}
     </div>
   );
 }
