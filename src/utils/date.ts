@@ -23,6 +23,10 @@ function accessibleDate(date: Date | null) {
  * `null` dates are formatted as 'Present'.
  */
 export function formatDateRange(start: Date, end: Date | null) {
+    const today = new Date();
+    if (!end && today < start) {
+        return `Starting ${formatDate(start)}`;
+    }
     return `${formatDate(start)} - ${formatDate(end)}`;
 }
 

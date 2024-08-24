@@ -46,7 +46,7 @@ function CurrentWork() {
   const worksAtWarp = startedAtWarp();
 
   const recentHistory = (<>
-    on the core team at {worksAtWarp ? <a href='/experience#warp'>Warp</a> : 'Warp'}, where I will be building out
+    on the core team at <a href='/experience#warp'>Warp</a>, where I will be building out
       the core functionality of the <a href='https://www.warp.dev/' target='_blank'>
         <Image src='/warp.png' className='inline-block mb-1 mr-1' alt='Warp' width={16} height={16} />
         Warp Terminal</a>.
