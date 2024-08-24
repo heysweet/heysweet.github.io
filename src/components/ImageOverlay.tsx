@@ -22,12 +22,14 @@ export const ImageOverlay: FC<ImageOverlayProps> = ({ children }) => {
 
     useEffect(() => {
         const handleKeyDown = (event: KeyboardEvent) => {
-            if (event.key === "Escape") {
+            if (event.key === 'Escape') {
                 setImage(null);
+                event.stopPropagation();
             }
         };
 
         const handleClick = (event: MouseEvent) => {
+            event.stopPropagation();
             setImage(null);
         }
 
@@ -45,7 +47,10 @@ export const ImageOverlay: FC<ImageOverlayProps> = ({ children }) => {
             <div className='m-4'>
                 {children}
             </div>
-            {imgData && <div className="absolute inset-0 checkerboard-lg" onClick={() => setImage(null)}>
+            {imgData && <div className="absolute inset-0 checkerboard-lg" onClick={(e) => {
+                setImage(null); 
+                e.stopPropagation();
+            }}>
                 <Image src={imgData.src} alt={imgData.alt} fill className="h-full w-full object-contain animate-img-load" />
             </div>}
         </>
