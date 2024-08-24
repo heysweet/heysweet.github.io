@@ -96,7 +96,7 @@ export default function VirtualWindow({
               onBlur={onBlur}
               ref={(el) => {if (el) menuItemRefs.current[index + 1] = el}}
               title={shouldUseShortTitle ? item.shortTitle : item.title}
-              className='px-1 overflow-hidden'
+              className='px-1 overflow-hidden ml-1'
               key={item.title}
               isActive={activeButton == null ? undefined : activeButton === item.title}
               open={() => setActiveButton(item.title)}
