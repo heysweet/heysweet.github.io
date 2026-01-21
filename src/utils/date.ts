@@ -63,10 +63,13 @@ function millisToDuration(millis: number, isStillActive = false): string {
     return `${durations.join(', ')}${andCounting}`;
 }
 
-export function formatDateDuration(start: Date, end: Date | null) {
+export function formatDateDuration(start: Date, end: Date | null): string | null {
     const isStillActive = !end;
     end ||= new Date();
     
     const durationMillis = end.getTime() - start.getTime();
+    if (durationMillis < 0) {
+        return null;
+    }
     return millisToDuration(durationMillis, isStillActive);
 }

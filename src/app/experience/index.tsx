@@ -7,10 +7,12 @@ import { nikeIntern } from './nikeIntern';
 import { geekAndSundry } from './geekAndSundry';
 import { ios } from './ios';
 import { warp } from './warp';
+import { mercury } from './mercury';
 
 
 
 export const relevantExperience: Experience[] = [
+    mercury,
     warp,
     dbtLabs,
     google,

@@ -11,7 +11,7 @@ export const warp = {
     title: 'Senior Software Engineer',
 
     startDate: new Date('2024-09-30'),
-    endDate: null, // Still work here
+    endDate: new Date('2025-12-05'),
 
     description: <div className='space-y-4'>
     <div>
