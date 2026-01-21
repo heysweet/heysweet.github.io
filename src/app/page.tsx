@@ -47,13 +47,14 @@ function CurrentWork() {
 
   return (
     <div>
-    I am currently working as a Software Engineer on the Code team at <a href='/experience#warp'>Warp</a>, where I build out
+    I am currently working as a Senior Software Engineer on the Credit team at <a href='/experience#mercury'>Mercury</a>
+    
+    Most recently, I was a Senior Software Engineer at <a href='/experience#warp'>Warp</a>, where I built out
       the IDE-like and AI Coding capabilities of the <a href='https://www.warp.dev/' target='_blank'>
         <Image src='/warp.png' className='inline-block mb-1 mr-1' alt='Warp' width={16} height={16} />
         Warp Terminal</a>.
 
-    Most recently, I was a Senior Software Engineer
-      at <a href='/experience#dbt-labs'>dbt Labs</a>, where I
+    At <a href='/experience#dbt-labs'>dbt Labs</a>, I
       turned my hackathon win into a flagship product: <a target='_blank' href="https://www.getdbt.com/blog/proactively-improve-your-dbt-projects-with-new-dbt-explorer-features">
         <Image src='/dbt.png' className='inline-block mb-1 mr-1' alt='dbt Labs' width={16} height={16} />
         dbt Explorer
