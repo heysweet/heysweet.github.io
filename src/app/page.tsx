@@ -47,7 +47,7 @@ function CurrentWork() {
 
   return (
     <div>
-    I am currently working as a Senior Software Engineer on the Credit team at <a href='/experience#mercury'>Mercury</a>
+    I am currently working as a Senior Software Engineer on the Credit team at <a href='/experience#mercury'>Mercury</a>.
     
     Most recently, I was a Senior Software Engineer at <a href='/experience#warp'>Warp</a>, where I built out
       the IDE-like and AI Coding capabilities of the <a href='https://www.warp.dev/' target='_blank'>
